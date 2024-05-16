@@ -32,7 +32,7 @@ function App() {
           <ul>
             <li>
             <NavLink
-                to="/"  
+                to="/portfolio"  
                 style={({ isActive }) => ({
                   fill: isActive ? '#fff' : '#545e6f',
                 })}
@@ -42,7 +42,7 @@ function App() {
             </li>
             <li>
               <NavLink
-                to="/about"  
+                to="/portfolio/about"  
                 className={setActive}
               >
                 About
@@ -50,7 +50,7 @@ function App() {
             </li>
             <li>              
               <NavLink
-                to="/contact"  
+                to="/portfolio/contact"  
                 className={setActive}
               >
                 Contact
@@ -63,9 +63,9 @@ function App() {
       {/* https://blog.logrocket.com/create-draggable-components-react-draggable/ */}
 
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/portfolio" element={<Home/>}/>
+          <Route path="/portfolio/about" element={<About/>}/>
+          <Route path="/portfolio/contact" element={<Contact/>}/>
         </Routes>
       </div>
       
