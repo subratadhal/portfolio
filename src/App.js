@@ -1,12 +1,12 @@
 import React from 'react';
-import Draggable from 'react-draggable';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import './App.css';
-import HomeIcon from './images/svg/HomeIcon';
 
-const Home = () => <div className='heightfull'>Home Page</div>;
-const About = () => <div className='heightfull'>About Us</div>;
-const Contact = () => <div className='heightfull'>Contact Information</div>;
+//import './assets/scss/style.scss';
+import Home from './Component/Home';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 function App() {
@@ -17,60 +17,37 @@ function App() {
   }
   const setActive = ({ isActive }) =>
     isActive ? "active" : "";
-  return (
-    
-    <div className="App">
-       <Router> 
-      <div>
-      <Draggable       
-       defaultPosition={{x: 0, y: 0}}
-       onMouseDown={eventHandler}
-       onStart={eventHandler}
-       onDrag={eventHandler}
-       onStop={eventHandler}>
-        <nav className='navigation-dragable'>
-          <ul>
-            <li>
-            <NavLink
-                to="/portfolio"  
-                style={({ isActive }) => ({
-                  fill: isActive ? '#fff' : '#545e6f',
-                })}
-              >
-               <HomeIcon />
-              </NavLink>              
-            </li>
-            <li>
-              <NavLink
-                to="/portfolio/about"  
-                className={setActive}
-              >
-                About
-              </NavLink>
-            </li>
-            <li>              
-              <NavLink
-                to="/portfolio/contact"  
-                className={setActive}
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </Draggable>
-      
-      {/* https://blog.logrocket.com/create-draggable-components-react-draggable/ */}
 
+  return (
+    <Router>
+      <header className='app-header'>
+        <section className='header-top'>
+          <div className='nav-button set1'>
+            <div className='overbutton'>
+              Setup
+            </div>
+          </div>
+          <div className='nav-button set2'>
+            <div className='overbutton'>
+              Setup
+            </div>
+          </div>
+          <div className='nav-button set3'>
+            <div className='overbutton'>
+              Setup
+            </div>
+          </div>
+        </section>
+        <section className='header-right'></section>
+        <section className='header-bottom'></section>
+        <section className='header-left'></section>
+      </header>
+      <main>
         <Routes>
-          <Route path="/portfolio" element={<Home/>}/>
-          <Route path="/portfolio/about" element={<About/>}/>
-          <Route path="/portfolio/contact" element={<Contact/>}/>
+          <Route path="/portfolio" element={<Home />} />
         </Routes>
-      </div>
-      
+      </main>
     </Router>
-    </div>
   );
 }
 
