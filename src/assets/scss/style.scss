@@ -1,3 +1,7 @@
+body{
+    background: url('../../assets/images/dot_bg.png') repeat;
+}
+
 body,
 h1,
 h2,
@@ -115,12 +119,18 @@ p {
     align-items: center;
     flex-direction: column;
     position: relative;
+    //background-color: #ccc;
+    margin-bottom: 10px;
 }
 
 .slide {
     width: 1060px;
+    @media (max-width:1550px) and (min-width:1200px){
+        width: 800px;
+    }
+
     margin: 0 auto;
-    position: relative;
+    position: relative !important;
 
     .slide_link {
         background: url('../images/svg/slide_link_background.svg') no-repeat center;
@@ -128,20 +138,33 @@ p {
         height: 36px;
         position: absolute;
         display: block;
+        background-size: contain;
     }
 
+    .main-image{
+        width: 100%;
+    }
+
+   
     &.slide1 {
-        .slide1-left-img {
+
+        .slide-left-img {
             position: absolute;
-            left: -130px;
-            right: -29px;
-            bottom: -30px;
+            left: -55px;
+            bottom: -30px;  
+            width: 120px;
+            img{
+                width: 100%;
+            }
         }
 
-        .slide1-right-img {
+        .slide-right-img {
             position: absolute;
-            right: -29px;
-            top: 82px;
+            right: -50px;
+            bottom: -30px;  
+            img{
+                width: 100%;
+            }
         }
 
         .slide1_content_background {
@@ -149,40 +172,210 @@ p {
             bottom: -200px;
             right: -30px;
             background: url('../../assets/images/svg/slide1_content_background.svg') no-repeat center;
-            width: 560px;
+            width:50%;
             height: 302px;
             padding: 50px 90px 30px 40px;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
 
             h2 {
                 font-size: 36px;
                 color: #333;
                 font-weight: 700;
+                width: 100%;
             }
 
             p {
-                font-size: 22;
+                font-size: 22px;
                 font-weight: 400;
                 color: #444;
+                width: 100%;
             }
 
             .slide1_link {
                 right: 35px;
                 top: 27px;
+                flex-direction: column;
+            }
+            @media (max-width:1550px) and (min-width:1200px){
+                height: 240px;
+                bottom: -100px;
+                padding-right: 60px;
+                h2{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                .slide1_link {
+                    width: 24px;
+                    height: 24px;
+                    right: 30px;
+                    top: 33px;
+                }
             }
         }
     }
-
     &.slide2 {
-        .slide2-left-img {
+
+        .slide-left-img {
             position: absolute;
-            left: -160px;
-            bottom: -30px;
+            left: -55px;
+            bottom: -10px;  
+            width: 150px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
         }
 
-        .slide2-right-img {
+        .slide-right-img {
             position: absolute;
-            right: -89px;
-            bottom: -120px;
+            right: -29px;
+            bottom: -30px;
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide3 {
+
+        .slide-left-img {
+            position: absolute;
+            left: -20px;
+            bottom: -30px;  
+            width: 100px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -29px;
+            bottom: -30px;
+            width: 150px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide4{
+
+        .slide-left-img {
+            position: absolute;
+            left: -20px;
+            bottom: -30px;  
+            width: 100px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -29px;
+            bottom: -30px;
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide5{
+
+        .slide-left-img {
+            position: absolute;
+            left: -50px;
+            bottom: -20px;  
+            width: 70px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -50px;
+            bottom: -30px;
+            width: 150px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide6{
+
+        .slide-left-img {
+            position: absolute;
+            left: -50px;
+            bottom: -20px;  
+            width: 70px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -50px;
+            bottom: -60px;
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide7{
+
+        .slide-left-img {
+            position: absolute;
+            left: -30px;
+            bottom: -20px;  
+            width: 120px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -50px;
+            bottom: -30px;
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &.slide8{
+
+        .slide-left-img {
+            position: absolute;
+            left: -30px;
+            bottom: -20px;  
+            width: 150px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -50px;
+            bottom: -30px;
+            width: 230px;
+            img{
+                width: 100%;
+            }
         }
     }
 }

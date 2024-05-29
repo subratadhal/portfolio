@@ -1,13 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
-import './App.css';
-
-//import './assets/scss/style.scss';
 import Home from './Component/Home';
-
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-
-
+import './assets/scss/style.scss';
 
 function App() {
   
