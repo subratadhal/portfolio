@@ -31,10 +31,36 @@ git pull origin live
 ```
 Now master branch also updated with all chagnes in live branch
 
+
 ### `Deployment`
+01| Create a new branch from "live" branch like "master02"
+```python
+git checkout master02
+```
+02| Take pull from "live"
+```python
+git pull origin live
+npm i
+```
+03| Update live branch "master" with new branch "master02"
+```python
+"deploy": "gh-pages -b master -d build",
+```
+to
+```python
+"deploy": "gh-pages -b master02 -d build",
+```
+
+05| Set default branch in gitHub Page
+Change "buid and deployment" sourse to "master02" branch and press SAVE
+
+06| run deployment script
 ```python
 npm run deploy
 ```
+
+
+
 Check the [https://subratadhal.github.io/portfolio](https://subratadhal.github.io/portfolio) for updated
 
 
