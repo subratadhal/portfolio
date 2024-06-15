@@ -59,8 +59,6 @@ Change "buid and deployment" sourse to "master02" branch and press SAVE
 npm run deploy
 ```
 
-
-
 Check the [https://subratadhal.github.io/portfolio](https://subratadhal.github.io/portfolio) for updated
 
 
