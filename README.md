@@ -11,7 +11,7 @@ Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio) to view 
 
 # `Deploy Code`
 
-There are two branch: main[Master], live[Dev].
+There are two branch: master[Master], live[Dev].
 
 ## `Process 1:`
 
@@ -24,12 +24,12 @@ git push origin live
 Now all local changes are pushed in live branch.
 
 ## `Process: 2`
-Checkout to main branch. Take pull from live branch and run deployment script.
+Checkout to master branch. Take pull from live branch and run deployment script.
 ```python
-git checkout main
+git checkout master
 git pull origin live
 ```
-Now main branch also updated with all chagnes in live branch
+Now master branch also updated with all chagnes in live branch
 
 ### `Deployment`
 ```python
