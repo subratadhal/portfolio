@@ -3,37 +3,23 @@ import { useParams } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import {stockData} from '../../data/casestudy';
 import ReactPlayer from 'react-player';
+import { NavLink } from 'react-router-dom';
+import PaginationCaseStudy from '../PaginationCaseStudy';
+import ScrollTop from '../ScrollTop';
+
 
 function Casestudydetails(props) {
-  const [scrollClass, setScrollClass] = useState('');
   const [item, setIitem] = useState({});
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 150) {
-        setScrollClass('active');
-      } else {
-        setScrollClass('');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const { id } = useParams(); 
 
   useEffect(() => {
     const arrayItem = stockData.find(item => item.slug === id);
     setIitem(arrayItem);
-    console.log(arrayItem);
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (
     <div className='case-study-details'>
-      <div className={`tag ${scrollClass}`}  style={{background: item?.color?.tagBackground}}>
-      {item?.title}
-      </div>
      <section className='header-panel'>
         <div className="container">
           <div className="row">
@@ -50,7 +36,7 @@ function Casestudydetails(props) {
           <div className="row">
             <div className="col"> 
               <div className="hero-banner-case-study">  
-                  <img src={`${process.env.PUBLIC_URL}/images/casestudy/1/${item?.bannerImage}`} alt='' />
+                  <img src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.bannerImage}`} alt='' />
                 </div>  
             </div>
           </div>
@@ -177,7 +163,7 @@ function Casestudydetails(props) {
                           <div className="key-take-away" key={key}>
                             <div className='kta-number'
                               style={{background: item?.color?.primary, color: item?.color?.primaryText}}
-                            >0{key}</div>
+                            >0{key+1}</div>
                             <div 
                               className='kta-text'
                               style={{backgroundImage: `linear-gradient(to right, ${item?.color?.primary}, ${item?.color?.primaryText})`}}
@@ -193,6 +179,7 @@ function Casestudydetails(props) {
           </div>
         </div>
       </section> 
+      { item?.UserFlowImage && ( 
       <section>
         <div className="container">
           <div className="row">
@@ -203,25 +190,55 @@ function Casestudydetails(props) {
                   <p className='section-paragraph' style={{color: item?.color?.secondary }}>
                     {item?.UserFlow}
                   </p>
-                  <img className='user-flow-img' src={`${process.env.PUBLIC_URL}/images/casestudy/1/${item?.UserFlowImage}`} alt='' />
+                  <img className='user-flow-img' src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.UserFlowImage}`} alt='' />
               </div>  
             </div>
           </div>
         </div>
       </section>
+      )}
+      { item?.colorPalate && ( 
       <section>
         <div className="container">
           <div className="row">
             <div className="col"> 
               <div className="section-cs portfolio-video">
-                  <h2 style={{color: item?.color?.primary }}>Portfolio Video</h2>
-                  <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+                  <h2 style={{color: item?.color?.primary }}>Color Palette</h2>
+                  <img className='user-flow-img' src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.colorPalate}`} alt='' />
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section> 
+      )}
+      { item?.logoDesign && ( 
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col"> 
+              <div className="section-cs portfolio-video">
+                  <h2 style={{color: item?.color?.primary }}>Logo Design</h2>
+                  <img className='user-flow-img' src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.logoDesign}`} alt='' />
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section> 
+      )}
+      { item?.prototypeVideo && ( 
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col"> 
+              <div className="section-cs portfolio-video">
+                  <h2 style={{color: item?.color?.primary }}>Prototype Video</h2>
+                  <ReactPlayer url={ item?.prototypeVideo}  />
               </div>  
             </div>
           </div>
         </div>
       </section>  
-      
+       )}
       <section>
         <div className="container-fluid screens-section" style={{background: item?.color?.screensBackground }}>
           <div className="row">
@@ -230,20 +247,22 @@ function Casestudydetails(props) {
                   <h2 style={{color: item?.color?.primary }}>Screens</h2>                  
               </div> 
               <div className='container' style={{background: item?.color?.screensBackground }}> 
-                    <div className="row">
-                      <div className="col all-screens"> 
-                      {item?.appImg?.map((data, key) => {
-                        return (
-                          <img src={`${process.env.PUBLIC_URL}/images/casestudy/1/screens/${data}`} alt='' />
-                        );
-                      })}   
-                      </div>
+                  <div className="row">
+                    <div className="col all-screens"> 
+                    {item?.appImg?.map((data, key) => {
+                      return (
+                        <img src={`${process.env.PUBLIC_URL}/images/casestudy/${data}`} alt='' />
+                      );
+                    })}   
                     </div>
-                  </div> 
+                  </div>
+                </div> 
             </div>
           </div>
         </div>
       </section> 
+      <PaginationCaseStudy slug={id}/>
+      <ScrollTop />
     </div>
   );
 }

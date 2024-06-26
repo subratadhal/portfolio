@@ -11,6 +11,9 @@ import Appportfolio from './Component/Appportfolio';
 import Webdesign from './Component/Webdesign';
 import Casestudylist from './Component/Casestudylist';
 import Casestudydetails from './Component/Casestudydetails';
+import Resume from './Component/Resume';
+import Contact from './Component/Contact';
+import Logo from './Component/Logo';
 
 
 
@@ -24,89 +27,36 @@ function App() {
 
   return (
     <Router>
-      {/* <header className='app-header'>
-        <section className='header-top'>
-          <div className='nav-button set1'>
-            <div className='overbutton home'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button set2'>
-            <div className='overbutton about'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button set3'>
-            <div className='overbutton contact'>
-              Setup
-            </div>
-          </div>
-        </section>
-        <section className='header-right'>
-          <div className='nav-button-right set1'>
-            <div className='overbutton linkedin_portfolio'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button-right set2'>
-            <div className='overbutton other2'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button-right set3'>
-            <div className='overbutton other1'>
-              Setup
-            </div>
-          </div>
-        </section>
-        <section className='header-bottom'></section>
-        <section className='header-left'>
-          <div className='nav-button-left set1'>
-            <div className='overbutton portfolio'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button-left set2'>
-            <div className='overbutton case_study'>
-              Setup
-            </div>
-          </div>
-          <div className='nav-button-left set3'>
-            <div className='overbutton resume'>
-              Setup
-            </div>
-          </div>
-        </section>
-      </header> */}
       <header className={menu ? 'menu-profile open' : 'menu-profile'}>
       <ul>
         <li>
           <div className='menu-box'>
             <div className='menu-heading'>Portfolio</div>
-            <NavLink to="/portfolio/app-design" onClick={()=>menuOnClick()}>App Design</NavLink>
-            <NavLink to="/portfolio/web-design" onClick={()=>menuOnClick()}>Web Design</NavLink>
-            <NavLink to="/portfolio/web-design" onClick={()=>menuOnClick()}>Web Sites</NavLink>
+            <div className='nav-link'><NavLink to="/portfolio/app-design" onClick={()=>menuOnClick()}>App Design</NavLink></div>
+            <div className='nav-link'><NavLink to="/portfolio/web-design" onClick={()=>menuOnClick()}>Web Design</NavLink></div>
+            <div className='nav-link'><NavLink to="/portfolio/web-design" onClick={()=>menuOnClick()}>Web Sites</NavLink></div>
           </div>
         </li>
         <li>
           <div className='menu-box'>
             <div className='menu-heading'>Case Study</div>
-              <NavLink to="/portfolio/case-study" onClick={()=>menuOnClick()}>App / Web Design</NavLink>
+            <div className='nav-link'><NavLink to="/portfolio/case-study" onClick={()=>menuOnClick()}>App & Web</NavLink></div>
           </div>
         </li>
         <li>
         <div className='menu-box'>
           <div className='menu-heading'>Graphics</div>
-            <NavLink to="/portfolio">
-              Banners
-            </NavLink>
+          <div className='nav-link'><NavLink to="/portfolio/logo">
+              Logo
+            </NavLink></div>
           </div>
         </li>
         <li>
           <div className='menu-box'>
             <div className='menu-heading'>Business</div>
-            <NavLink to="/portfolio/about" onClick={()=>menuOnClick()}>About</NavLink>
-            <NavLink to="/portfolio/contact">Contact</NavLink>
+            <div className='nav-link'><NavLink to="/portfolio/resume" onClick={()=>menuOnClick()}>Resume</NavLink></div>
+            <div className='nav-link'><NavLink to="/portfolio/about" onClick={()=>menuOnClick()}>About</NavLink></div>
+            <div className='nav-link'><NavLink to="/portfolio/contact" onClick={()=>menuOnClick()}>Contact</NavLink></div>
           </div>
         </li>
       </ul>
@@ -115,18 +65,22 @@ function App() {
         </div>
         {menu && (
           <div className='home-menu-button' role='button'>          
-            <NavLink to="/portfolio" onClick={()=>menuOnClick()}><img src={homeImg} alt='' className='home-menu' /></NavLink>
+            <div className='nav-link'><NavLink to="/portfolio" onClick={()=>menuOnClick()}><img src={homeImg} alt='' className='home-menu' /></NavLink></div>
           </div>
         )}
       </header>
       <main>
         <Routes>
+          
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/app-design" element={<Appportfolio />} />
           <Route path="/portfolio/web-design" element={<Webdesign />} />
+          <Route path="/portfolio/resume" element={<Resume />} />
           <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/case-study" element={<Casestudylist />} />
           <Route path="/portfolio/case-study-details/:id" element={<Casestudydetails />} />
+          <Route path="/portfolio/logo" element={<Logo />} />
         </Routes>
       </main>
     </Router>

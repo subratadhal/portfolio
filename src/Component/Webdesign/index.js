@@ -78,6 +78,7 @@ import slide16Left from '../../assets/images/web/svg/slide16-left-bottom.png';
 import slide17 from '../../assets/images/web/csr.png';
 import slide17Right from '../../assets/images/web/svg/slide17-right-bottom.png';
 import slide17Left from '../../assets/images/web/svg/slide17-left-bottom.png';
+import ScrollTop from '../ScrollTop';
 
 
 
@@ -164,7 +165,7 @@ function Webdesign() {
                 </Fade>
                 <Bounce>
                   <div className='link'>
-                    <NavLink  to={'https://https://www.eshopbox.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                    <NavLink  to={'https://www.eshopbox.com/'} target="_blank" rel="nofollow">Web link</NavLink>
                   </div>
                 </Bounce>
               </div>
@@ -594,6 +595,7 @@ function Webdesign() {
                     <NavLink className="slide_link slide1_link" to="/"></NavLink>
                   </div>
                 </Reveal> */}
+                <ScrollTop />
 
     </>
   );
