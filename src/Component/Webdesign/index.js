@@ -79,14 +79,13 @@ import slide17 from '../../assets/images/web/csr.png';
 import slide17Right from '../../assets/images/web/svg/slide17-right-bottom.png';
 import slide17Left from '../../assets/images/web/svg/slide17-left-bottom.png';
 import ScrollTop from '../ScrollTop';
-
-
+import Heading from "../Heading";
 
 function Webdesign() {
-
   return (
     <>
-       <section className='header-panel'>
+      <Heading title="Web Design" type="colored1" />
+      {/* <section className='header-panel'>
         <div className="container">
           <div className="row">
             <div className="col"> 
@@ -96,7 +95,7 @@ function Webdesign() {
             </div>
           </div>
         </div>
-      </section> 
+      </section>  */}
       {/* <div className="container">
         <div className="row">
           <div className="col">
@@ -105,23 +104,22 @@ function Webdesign() {
           </div>
           </div> */}
 
-
       <div className="container">
         <div className="row">
           <div className="col">
             {/* arborfinancialgroup */}
-            <div className='screen-container'>
-              <div className='web-slide slide1'>
-                <Zoom >
+            <div className="screen-container">
+              <div className="web-slide slide1">
+                <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide1} alt='' className='main-image'/>
+                      <img src={slide1} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox direction="left">
-                  <div className='slide-left-img'>
-                    <img src={slide1Left} alt='' />
+                  <div className="slide-left-img">
+                    <img src={slide1Left} alt="" />
                   </div>
                 </JackInTheBox>
                 {/* <Fade right>
@@ -132,214 +130,258 @@ function Webdesign() {
                   </div>
                 </Fade> */}
                 <Rotate direction="right">
-                  <div className='slide-right-img'>
-                    <img src={slide1Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide1Right} alt="" />
                   </div>
                 </Rotate>
                 <Bounce>
-                  <div className='link'>
-                    <NavLink  to={'http://arborfinancialgroup.net'} target="_blank" rel="nofollow" >Web link</NavLink>
+                  <div className="link">
+                    <NavLink
+                      to={"http://arborfinancialgroup.net"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* eshopbox Gym */}
-            <div className='screen-container'>
-              <div className='web-slide slide2'>
+            {/* eshopbox Gym */}
+            <div className="screen-container">
+              <div className="web-slide slide2">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide2} alt=''  className='main-image'/>
+                      <img src={slide2} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-right-img'>
-                    <img src={slide2Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide2Right} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide2Left} alt='' />
+                  <div className="slide-left-img">
+                    <img src={slide2Left} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link'>
-                    <NavLink  to={'https://www.eshopbox.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link">
+                    <NavLink
+                      to={"https://www.eshopbox.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* Talk Cast */}
-            <div className='screen-container'>
-              <div className='web-slide slide3'>
+            {/* Talk Cast */}
+            <div className="screen-container">
+              <div className="web-slide slide3">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide3} alt='' className='main-image'/>
+                      <img src={slide3} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide3Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide3Left} alt="" />
                   </div>
                 </Fade>
                 <Rotate>
-                  <div className='slide-right-img'>
-                    <img src={slide3Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide3Right} alt="" />
                   </div>
                 </Rotate>
                 <Bounce>
-                  <div className='link link-slide3'>
-                    <NavLink  to={'https://theautopartsshop.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide3">
+                    <NavLink
+                      to={"https://theautopartsshop.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* Aqua Trade */}
-            <div className='screen-container'>
-              <div className='web-slide slide4'>
+            {/* Aqua Trade */}
+            <div className="screen-container">
+              <div className="web-slide slide4">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide4} alt='' className='main-image'/>
+                      <img src={slide4} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide4Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide4Left} alt="" />
                   </div>
                 </Fade>
                 <Rotate>
-                  <div className='slide-right-img'>
-                    <img src={slide4Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide4Right} alt="" />
                   </div>
                 </Rotate>
                 <Bounce>
-                  <div className='link'>
-                    <NavLink  to={'/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link">
+                    <NavLink to={"/"} target="_blank" rel="nofollow">
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* hajoona */}
-            <div className='screen-container'>              
-              <div className='web-slide slide5'>
+            {/* hajoona */}
+            <div className="screen-container">
+              <div className="web-slide slide5">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide5} alt='' className='main-image'/>
+                      <img src={slide5} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide5Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide5Left} alt="" />
                   </div>
                 </Fade>
                 <Rotate>
-                  <div className='slide-right-img'>
-                    <img src={slide5Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide5Right} alt="" />
                   </div>
                 </Rotate>
                 <Bounce>
-                  <div className='link'>
-                    <NavLink  to={'https://hajoona.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link">
+                    <NavLink
+                      to={"https://hajoona.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
             {/* https://foreverliving.com/ */}
-            <div className='screen-container'>
-              <div className='web-slide slide6'>
+            <div className="screen-container">
+              <div className="web-slide slide6">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide6} alt='' className='main-image'/>
+                      <img src={slide6} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide6Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide6Left} alt="" />
                   </div>
                 </Fade>
                 <Rotate>
-                  <div className='slide-right-img'>
-                    <img src={slide6Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide6Right} alt="" />
                   </div>
                 </Rotate>
                 <Bounce>
-                  <div className='link link-slide6'>
-                    <NavLink  to={'https://foreverliving.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide6">
+                    <NavLink
+                      to={"https://foreverliving.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* https://www.infoskysolutions.com/ */}
-            <div className='screen-container'>
-              <div className='web-slide slide7'>
+            {/* https://www.infoskysolutions.com/ */}
+            <div className="screen-container">
+              <div className="web-slide slide7">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide7} alt='' className='main-image'/>
+                      <img src={slide7} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide7Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide7Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide7Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide7Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide7'>
-                    <NavLink  to={'https://www.infoskysolutions.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide7">
+                    <NavLink
+                      to={"https://www.infoskysolutions.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
-                {/* morethanjustparks  */}
-            <div className='screen-container'>
-              <div className='web-slide slide8'>
+            {/* morethanjustparks  */}
+            <div className="screen-container">
+              <div className="web-slide slide8">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide8} alt='' className='main-image'/>
+                      <img src={slide8} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide8Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide8Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide8Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide8Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://morethanjustparks.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://morethanjustparks.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* https://ds3-software.de/  */}
-            <div className='screen-container'>
-              <div className='web-slide slide9'>
+            <div className="screen-container">
+              <div className="web-slide slide9">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide9} alt='' className='main-image'/>
+                      <img src={slide9} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
@@ -349,97 +391,121 @@ function Webdesign() {
                   </div>
                 </JackInTheBox> */}
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide9Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide9Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://ds3-software.de/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://ds3-software.de/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* https://speedtrader.com/ */}
-            <div className='screen-container'>
-              <div className='web-slide slide10'>
+            <div className="screen-container">
+              <div className="web-slide slide10">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide10} alt='' className='main-image'/>
+                      <img src={slide10} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide10Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide10Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide10Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide10Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://speedtrader.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://speedtrader.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* https://oral-architect.com/ */}
-            <div className='screen-container'>
-              <div className='web-slide slide11'>
+            <div className="screen-container">
+              <div className="web-slide slide11">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide11} alt='' className='main-image'/>
+                      <img src={slide11} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide11Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide11Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide11Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide11Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://oral-architect.com/'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://oral-architect.com/"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* relianceprimary  */}
-            <div className='screen-container'>
-              <div className='web-slide slide12'>
+            <div className="screen-container">
+              <div className="web-slide slide12">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide12} alt='' className='main-image'/>
+                      <img src={slide12} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide12Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide12Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide12Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide12Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://relianceprimary.com'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://relianceprimary.com"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
@@ -474,12 +540,12 @@ function Webdesign() {
             </div> */}
 
             {/* icd10charts  */}
-            <div className='screen-container'>
-              <div className='web-slide slide14'>
+            <div className="screen-container">
+              <div className="web-slide slide14">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide14} alt='' className='main-image'/>
+                      <img src={slide14} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
@@ -489,97 +555,121 @@ function Webdesign() {
                   </div>
                 </JackInTheBox> */}
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide14Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide14Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'http://www.icd10charts.com'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"http://www.icd10charts.com"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* chalotirth  */}
-            <div className='screen-container'>
-              <div className='web-slide slide15'>
+            <div className="screen-container">
+              <div className="web-slide slide15">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide15} alt='' className='main-image'/>
+                      <img src={slide15} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide15Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide15Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide15Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide15Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'https://chalotirth.com'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://chalotirth.com"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* http://edrugsafety.com/  */}
-            <div className='screen-container'>
-              <div className='web-slide slide16'>
+            <div className="screen-container">
+              <div className="web-slide slide16">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide16} alt='' className='main-image'/>
+                      <img src={slide16} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide16Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide16Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide16Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide16Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'http://edrugsafety.com'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"http://edrugsafety.com"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
             </div>
 
             {/* CSR Portal */}
-            <div className='screen-container'>
-              <div className='web-slide slide17'>
+            <div className="screen-container">
+              <div className="web-slide slide17">
                 <Zoom>
                   <div>
                     <Fade>
-                      <img src={slide17} alt='' className='main-image'/>
+                      <img src={slide17} alt="" className="main-image" />
                     </Fade>
                   </div>
                 </Zoom>
                 <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide17Left} alt=''/>
+                  <div className="slide-left-img">
+                    <img src={slide17Left} alt="" />
                   </div>
                 </JackInTheBox>
                 <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide17Right} alt='' />
+                  <div className="slide-right-img">
+                    <img src={slide17Right} alt="" />
                   </div>
                 </Fade>
                 <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'http://prodcsrportal.theautopartsshop.com/login'} target="_blank" rel="nofollow">Web link</NavLink>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"http://prodcsrportal.theautopartsshop.com/login"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
                   </div>
                 </Bounce>
               </div>
@@ -595,8 +685,7 @@ function Webdesign() {
                     <NavLink className="slide_link slide1_link" to="/"></NavLink>
                   </div>
                 </Reveal> */}
-                <ScrollTop />
-
+      <ScrollTop />
     </>
   );
 }
