@@ -1,17 +1,16 @@
-import React, { useRef, useCallback, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
   NavLink,
   Navigate,
 } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/style.scss";
-import menuImg from "./assets/images/svg/menu.gif";
-import homeImg from "./assets/images/svg/home.gif";
+// import menuImg from "./assets/images/svg/menu.gif";
+// import homeImg from "./assets/images/svg/home.gif";
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Appportfolio from "./Component/Appportfolio";
@@ -21,10 +20,15 @@ import Casestudydetails from "./Component/Casestudydetails";
 import Resume from "./Component/Resume";
 import Contact from "./Component/Contact";
 import Logo from "./Component/Logo";
+import {
+  JackInTheBox,
+  Slide,
+  Bounce,
+} from "react-awesome-reveal";
 
 function App() {
   const [menu, setMenu] = useState(false);
-
+  const url = window.location.href;
   const menuOnClick = () => {
     setMenu((prev) => !prev);
   };
@@ -32,88 +36,161 @@ function App() {
   return (
     <Router>
       <header className={menu ? "menu-profile open" : "menu-profile"}>
+        <div className="menu-close">
+          <Slide>
+            {" "}
+            <NavLink to="/portfolio" onClick={() => menuOnClick()}>
+              {"<"} Home
+            </NavLink>
+          </Slide>
+          {/* <NavLink to="/portfolio/app-design" onClick={() => menuOnClick()}>
+          Close
+        </NavLink> */}
+        </div>
         <ul>
           <li>
             <div className="menu-box">
-              <div className="menu-heading">Portfolio</div>
-              <div className="nav-link">
-                <NavLink
-                  to="/portfolio/app-design"
-                  onClick={() => menuOnClick()}
-                >
-                  App Design
-                </NavLink>
+              <div className="menu-heading">
+                <JackInTheBox>UI/UX</JackInTheBox>
               </div>
               <div className="nav-link">
-                <NavLink
-                  to="/portfolio/web-design"
-                  onClick={() => menuOnClick()}
-                >
-                  Web Design
-                </NavLink>
+                <Bounce>
+                  <NavLink
+                    to="/portfolio/app-design"
+                    onClick={() => menuOnClick()}
+                  >
+                    App
+                  </NavLink>
+                </Bounce>
               </div>
               <div className="nav-link">
+                <Bounce>
+                  <NavLink
+                    to="/portfolio/web-design"
+                    onClick={() => menuOnClick()}
+                  >
+                    Web
+                  </NavLink>
+                </Bounce>
+              </div>
+              {/* <div className="nav-link">
                 <NavLink
                   to="/portfolio/web-design"
                   onClick={() => menuOnClick()}
                 >
                   Web Sites
                 </NavLink>
+              </div> */}
+            </div>
+          </li>
+          <li>
+            <div className="menu-box">
+              <div className="menu-heading">
+                <JackInTheBox>Case Study</JackInTheBox>
+              </div>
+              <div className="nav-link">
+                <Bounce>
+                  {" "}
+                  <NavLink
+                    to="/portfolio/case-study"
+                    onClick={() => menuOnClick()}
+                  >
+                    App & Web
+                  </NavLink>
+                </Bounce>
               </div>
             </div>
           </li>
           <li>
             <div className="menu-box">
-              <div className="menu-heading">Case Study</div>
+              <div className="menu-heading">
+                <JackInTheBox>Graphics</JackInTheBox>
+              </div>
               <div className="nav-link">
-                <NavLink
-                  to="/portfolio/case-study"
-                  onClick={() => menuOnClick()}
-                >
-                  App & Web
-                </NavLink>
+                <Bounce>
+                  {" "}
+                  <NavLink to="/portfolio/logo" onClick={() => menuOnClick()}>
+                    Logo
+                  </NavLink>
+                </Bounce>
+              </div>
+              <div className="nav-link">
+                <Bounce>
+                  {" "}
+                  <NavLink
+                    to="/portfolio/creatives"
+                    onClick={() => menuOnClick()}
+                  >
+                    Creatives
+                  </NavLink>
+                </Bounce>
+              </div>
+              <div className="nav-link">
+                <Bounce>
+                  {" "}
+                  <NavLink
+                    to="/portfolio/banners"
+                    onClick={() => menuOnClick()}
+                  >
+                    Banners
+                  </NavLink>
+                </Bounce>
               </div>
             </div>
           </li>
           <li>
             <div className="menu-box">
-              <div className="menu-heading">Graphics</div>
-              <div className="nav-link">
-                <NavLink to="/portfolio/logo" onClick={() => menuOnClick()}>
-                  Logo
-                </NavLink>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="menu-box">
-              <div className="menu-heading">Business</div>
-              <div className="nav-link">
-                <NavLink to="/portfolio/resume" onClick={() => menuOnClick()}>
-                  Resume
-                </NavLink>
+              <div className="menu-heading">
+                <JackInTheBox>Business</JackInTheBox>
               </div>
               <div className="nav-link">
-                <NavLink to="/portfolio/about" onClick={() => menuOnClick()}>
-                  About
-                </NavLink>
+                <Bounce>
+                  {" "}
+                  <NavLink to="/portfolio/resume" onClick={() => menuOnClick()}>
+                    Resume
+                  </NavLink>
+                </Bounce>
               </div>
               <div className="nav-link">
-                <NavLink to="/portfolio/contact" onClick={() => menuOnClick()}>
-                  Contact
-                </NavLink>
+                <Bounce>
+                  {" "}
+                  <NavLink to="/portfolio/about" onClick={() => menuOnClick()}>
+                    About
+                  </NavLink>
+                </Bounce>
+              </div>
+              <div className="nav-link">
+                <Bounce>
+                  {" "}
+                  <NavLink
+                    to="/portfolio/contact"
+                    onClick={() => menuOnClick()}
+                  >
+                    Contact
+                  </NavLink>
+                </Bounce>
               </div>
             </div>
           </li>
         </ul>
-        <div
-          className="menu-button"
-          role="button"
-          onClick={() => menuOnClick()}
-        >
-          <img src={menuImg} alt="" />
-        </div>
-        {menu && (
+        {/* {menu && ( )} */}
+        {url.includes("portfolio") ? (
+          <div
+            className="menu-button"
+            role="button"
+            onClick={() => menuOnClick()}
+          >
+            <span className="menu-button-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+        ) : (
+          ""
+        )}
+
+        {/* {menu && (
           <div className="home-menu-button" role="button">
             <div className="nav-link">
               <NavLink to="/portfolio" onClick={() => menuOnClick()}>
@@ -121,12 +198,11 @@ function App() {
               </NavLink>
             </div>
           </div>
-        )}
+        )} */}
       </header>
       <main>
         <Routes>
           <Route path="/" element={<Navigate to="/portfolio" replace />} />
-          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/app-design" element={<Appportfolio />} />
           <Route path="/portfolio/web-design" element={<Webdesign />} />

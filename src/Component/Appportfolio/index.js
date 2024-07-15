@@ -1,21 +1,8 @@
-import React from 'react';
-import { Button } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-import {
-  Hinge,
-  JackInTheBox,
-  Roll,
-  Slide,
-  ZoomRoll,
-  Fade,
-  Rotate,
-  Flip,
-  Bounce,
-  Zoom,
-  Reveal,
-} from "react-awesome-reveal";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { JackInTheBox, Fade, Rotate, Bounce, Zoom } from "react-awesome-reveal";
 
-import portfolioTitle from "../../assets/images/app/svg/appDesignHeading.svg";
+// import portfolioTitle from "../../assets/images/app/svg/appDesignHeading.svg";
 
 import slide1 from "../../assets/images/app/ChitChat.png";
 import slide1Left from "../../assets/images/app/svg/slide1-left-bottom.svg";

@@ -283,7 +283,7 @@ p {
     position: fixed;
     left: 0;
     bottom: 0;
-    transition: all linear 0.2s;
+    //transition: all linear 0.s;
     width: 70px;
     height: 70px;
     z-index: 999;
@@ -314,7 +314,7 @@ p {
                 height: 200px;
                 .menu-heading{
                     color: #fff;
-                    font-size: 32px;
+                    font-size: 3vw;
                     width: 100%;
                     padding-bottom: 20px;
                     text-align: center;
@@ -324,7 +324,7 @@ p {
                     text-align: center;
                     a{
                         display: inline;
-                        font-size: 16px;
+                        font-size: 1.6vw;
                         color: #eee;
                         text-align: left;
                         text-decoration: none;
@@ -336,7 +336,7 @@ p {
     .home-menu-button{
         width: 70px;
         height: 70px;
-        background: #fff;
+        background: #000;
         border-radius: 50px 50px 0px 50px;    
         position: absolute;
         right: 0;
@@ -353,14 +353,38 @@ p {
     .menu-button{
         width: 70px;
         height: 70px;
-        background: #fff;
-        border-radius: 50px 50px 50px 0;    
-        position: absolute;
+        background: #000;
+        border-radius: 0 50px 50px 50px;    
+        position: fixed;
         left: 0;
-        bottom: 0;    
+        top: 0;    
         display: flex;
         justify-content: center;
         align-items: center;
+        .menu-button-icon{
+            display: block;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span{
+                background: #fff;
+                width: 100%;
+                height: 4px;
+                border-radius: 5px;
+                
+                &:first-child{
+                    animation: menuLineAnimation1 8s infinite;
+                }
+                &:nth-child(2){
+                    animation: menuLineAnimation2 15s infinite;
+                }
+                &:last-child{
+                    animation: menuLineAnimation3 10s infinite;
+                }                
+            }
+        }
     }
     &.open{       
         width: 100vw;
@@ -369,9 +393,52 @@ p {
         .home-menu-button{
             opacity: 1;
         }
+        .menu-button{
+            display: none;
+        }
+    }
+}
+@keyframes menuLineAnimation1 {
+    0%, 100% {
+      width: 30%;
+    }
+    50% {
+      width: 100%;
+    }
+}
+@keyframes menuLineAnimation2 {
+    0%, 100% {
+      width: 5%;
+    }
+    50% {
+      width: 100%;
+    }
+}
+@keyframes menuLineAnimation3 {
+    0%, 100% {
+      width: 50%;
+    }
+    50% {
+      width: 100%;
     }
 }
 
+.menu-close{
+    width: 100%;
+    top: 6vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   a{
+    display: block;
+    font-size: 1.8vw;
+    color: #fff;
+    text-decoration: none;    
+   }
+}
 .header-panel {
     .header-panel-logo{
         text-align: center;

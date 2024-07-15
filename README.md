@@ -13,6 +13,14 @@ Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio) to view 
 
 There are two branch: master[Master], live[Dev].
 
+
+## `Note:`
+01| Check Your File Paths:
+Ensure that the paths to your JavaScript files are correct. GitHub Pages is case-sensitive, so server.js and Server.js would be considered different files.
+
+02| Update Your Repository:
+Make sure your repository is up to date with the latest changes and that the changes have been pushed to the correct branch (usually main or gh-pages).
+
 ## `Process 1:`
 
 After all development will be done in live branch.
