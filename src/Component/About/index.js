@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollTop from '../ScrollTop';
-import resumeHeading from '../../assets/images/resume/resume.svg';
-import { NavLink } from 'react-router-dom';
+// import resumeHeading from '../../assets/images/resume/resume.svg';
+// import { NavLink } from 'react-router-dom';
 import PaginationCommon from "../PaginationCommon";
 import Heading from "../Heading";
 
