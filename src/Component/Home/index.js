@@ -243,16 +243,6 @@ function Home() {
                 App Design
               </NavLink>
             </li>
-            <li className="link-style-6">
-              <NavLink
-                onMouseMove={handleMouseMoveStyle6}
-                onMouseLeave={handleMouseMoveStyle6Reset}
-                style={{ backgroundSize: `${percentageStyle6}%` }}
-                to={"/portfolio/contact"}
-              >
-                Contact
-              </NavLink>
-            </li>
             <li className="link-style-7">
               <NavLink
                 onMouseMove={handleMouseMoveStyle7}
@@ -260,17 +250,7 @@ function Home() {
                 style={{ backgroundSize: `${percentageStyle7}%` }}
                 to={"/portfolio"}
               >
-                Illustrator
-              </NavLink>
-            </li>
-            <li className="link-style-8">
-              <NavLink
-                onMouseMove={handleMouseMoveStyle8}
-                onMouseLeave={handleMouseMoveStyle8Reset}
-                style={{ backgroundSize: `${percentageStyle8}%` }}
-                to={"/portfolio/logo"}
-              >
-                Logo
+                Illustration
               </NavLink>
             </li>
             <li className="link-style-9">
@@ -283,6 +263,16 @@ function Home() {
                 Creatives
               </NavLink>
             </li>
+            <li className="link-style-8">
+              <NavLink
+                onMouseMove={handleMouseMoveStyle8}
+                onMouseLeave={handleMouseMoveStyle8Reset}
+                style={{ backgroundSize: `${percentageStyle8}%` }}
+                to={"/portfolio/logo"}
+              >
+                Logo
+              </NavLink>
+            </li>
             <li className="link-style-10">
               <NavLink
                 onMouseMove={handleMouseMoveStyle10}
@@ -291,6 +281,16 @@ function Home() {
                 to={"/portfolio/about"}
               >
                 About
+              </NavLink>
+            </li>
+            <li className="link-style-6">
+              <NavLink
+                onMouseMove={handleMouseMoveStyle6}
+                onMouseLeave={handleMouseMoveStyle6Reset}
+                style={{ backgroundSize: `${percentageStyle6}%` }}
+                to={"/portfolio/contact"}
+              >
+                Contact
               </NavLink>
             </li>
           </ul>

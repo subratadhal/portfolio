@@ -353,7 +353,7 @@ p {
     .menu-button{
         width: 70px;
         height: 70px;
-        background: #000;
+        // background: #000;
         border-radius: 0 50px 50px 50px;    
         position: fixed;
         left: 0;
@@ -361,6 +361,14 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        background-size: 1800% 1800%;
+
+        -webkit-animation: rainbow 18s ease infinite;
+        -z-animation: rainbow 18s ease infinite;
+        -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;
+
         .menu-button-icon{
             display: block;
             width: 32px;
@@ -397,6 +405,26 @@ p {
             display: none;
         }
     }
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
 @keyframes menuLineAnimation1 {
     0%, 100% {
@@ -1588,8 +1616,8 @@ svg {
                 }
                 &.link-style-6{
                     a{
-                        font-size: 3vw;
-                        line-height: 3vw;
+                        font-size: 1.5vw;
+                        line-height: 1.5vw;
                         color: #111;
                         background-position: left center;    
                         background-repeat: no-repeat;
@@ -1652,8 +1680,8 @@ svg {
                 }
                 &.link-style-10{
                     a{
-                        font-size: 2vw;
-                        line-height: 2vw;
+                        font-size: 2.5vw;
+                        line-height: 2.5vw;
                         color: #333;
                         background-position: left center;    
                         background-repeat: no-repeat;

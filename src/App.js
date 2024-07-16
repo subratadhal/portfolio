@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   NavLink,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/style.scss";
-// import menuImg from "./assets/images/svg/menu.gif";
-// import homeImg from "./assets/images/svg/home.gif";
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Appportfolio from "./Component/Appportfolio";
@@ -20,15 +19,32 @@ import Casestudydetails from "./Component/Casestudydetails";
 import Resume from "./Component/Resume";
 import Contact from "./Component/Contact";
 import Logo from "./Component/Logo";
-import {
-  JackInTheBox,
-  Slide,
-  Bounce,
-} from "react-awesome-reveal";
+import { JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
+
+function Menu({ onMenuChildComponentClick }) {
+  const location = useLocation();
+
+  return (
+    <div>
+      {location.pathname !== "/portfolio" && (
+        <div
+          className="menu-button"
+          role="button"
+          onClick={onMenuChildComponentClick}
+        >
+          <span className="menu-button-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 function App() {
   const [menu, setMenu] = useState(false);
-  const url = window.location.href;
   const menuOnClick = () => {
     setMenu((prev) => !prev);
   };
@@ -43,9 +59,6 @@ function App() {
               {"<"} Home
             </NavLink>
           </Slide>
-          {/* <NavLink to="/portfolio/app-design" onClick={() => menuOnClick()}>
-          Close
-        </NavLink> */}
         </div>
         <ul>
           <li>
@@ -73,14 +86,6 @@ function App() {
                   </NavLink>
                 </Bounce>
               </div>
-              {/* <div className="nav-link">
-                <NavLink
-                  to="/portfolio/web-design"
-                  onClick={() => menuOnClick()}
-                >
-                  Web Sites
-                </NavLink>
-              </div> */}
             </div>
           </li>
           <li>
@@ -173,32 +178,7 @@ function App() {
             </div>
           </li>
         </ul>
-        {/* {menu && ( )} */}
-        {url.includes("portfolio") ? (
-          <div
-            className="menu-button"
-            role="button"
-            onClick={() => menuOnClick()}
-          >
-            <span className="menu-button-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-        ) : (
-          ""
-        )}
-
-        {/* {menu && (
-          <div className="home-menu-button" role="button">
-            <div className="nav-link">
-              <NavLink to="/portfolio" onClick={() => menuOnClick()}>
-                <img src={homeImg} alt="" className="home-menu" />
-              </NavLink>
-            </div>
-          </div>
-        )} */}
+        <Menu onMenuChildComponentClick={menuOnClick} />
       </header>
       <main>
         <Routes>
