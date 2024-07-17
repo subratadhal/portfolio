@@ -86,6 +86,13 @@ function App() {
                   </NavLink>
                 </Bounce>
               </div>
+              <div className="nav-link">
+                <Bounce>
+                  <NavLink to="/portfolio/sass" onClick={() => menuOnClick()}>
+                    Sass
+                  </NavLink>
+                </Bounce>
+              </div>
             </div>
           </li>
           <li>

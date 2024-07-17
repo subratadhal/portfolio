@@ -1425,6 +1425,29 @@ p {
             }
         }
     }
+    &.slide18{
+
+        .slide-left-img {
+            position: absolute;
+            left: -30px;
+            bottom: -20px;  
+            width: 136px;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+
+        .slide-right-img {
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            width: 94px;
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -1914,6 +1937,7 @@ CASE STUDY
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 100px 0;
     .pagination-link{        
         a{
@@ -1926,11 +1950,16 @@ CASE STUDY
             img{
                 margin-bottom: 20px;
             }
+            @media (max-width:1400px) and (min-width: 768px) {
+                img{ width: 100%;}
+                
+            }
         }
     }
     .pagination-list{
         margin: 0 50px;
         width: 100px;
+        min-width: 100px;
         height: 100px;
         border-radius: 100px;
         background: #222;

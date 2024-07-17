@@ -54,16 +54,16 @@ function Appportfolio() {
                     </Fade>
                   </div>
                 </Zoom>
-                <JackInTheBox>
+                <Fade>
                   <div className="slide-left-img">
                     <img src={slide7Left} alt="" />
                   </div>
-                </JackInTheBox>
-                <Fade>
+                </Fade>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide7Right} alt="" />
                   </div>
-                </Fade>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link link-slide7">
                     <NavLink
@@ -87,16 +87,16 @@ function Appportfolio() {
                     </Fade>
                   </div>
                 </Zoom>
-                <JackInTheBox>
+                <Fade>
                   <div className="slide-left-img">
                     <img src={slide8Left} alt="" />
                   </div>
-                </JackInTheBox>
-                <Fade>
+                </Fade>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide8Right} alt="" />
                   </div>
-                </Fade>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link link-slide8">
                     <NavLink
@@ -120,11 +120,11 @@ function Appportfolio() {
                     </Fade>
                   </div>
                 </Zoom>
-                <JackInTheBox direction="left">
+                <Fade>
                   <div className="slide-left-img">
                     <img src={slide1Left} alt="" />
                   </div>
-                </JackInTheBox>
+                </Fade>
                 {/* <Fade right>
                   <div className='slide1_content_background'>
                     <h2>The Auto Parts Shop</h2>
@@ -132,11 +132,11 @@ function Appportfolio() {
                     <NavLink className="slide_link slide1_link" to="/"></NavLink>
                   </div>
                 </Fade> */}
-                <Rotate direction="right">
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide1Right} alt="" />
                   </div>
-                </Rotate>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link">
                     <NavLink
@@ -198,11 +198,11 @@ function Appportfolio() {
                     <img src={slide3Left} alt="" />
                   </div>
                 </Fade>
-                <Rotate>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide3Right} alt="" />
                   </div>
-                </Rotate>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link link-slide3">
                     <NavLink
@@ -231,11 +231,11 @@ function Appportfolio() {
                     <img src={slide4Left} alt="" />
                   </div>
                 </Fade>
-                <Rotate>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide4Right} alt="" />
                   </div>
-                </Rotate>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link">
                     <NavLink
@@ -264,11 +264,11 @@ function Appportfolio() {
                     <img src={slide5Left} alt="" />
                   </div>
                 </Fade>
-                <Rotate>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide5Right} alt="" />
                   </div>
-                </Rotate>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link">
                     <NavLink
@@ -297,11 +297,11 @@ function Appportfolio() {
                     <img src={slide5Left} alt=''/>
                   </div>
                 </Fade> */}
-                <Rotate>
+                <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide6Right} alt="" />
                   </div>
-                </Rotate>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link link-slide6">
                     <NavLink

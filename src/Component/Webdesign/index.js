@@ -1,84 +1,83 @@
-import React from 'react';
-import { Button } from 'reactstrap';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
-import { Hinge, JackInTheBox, Roll, Slide, ZoomRoll, Fade, Rotate, Flip, Bounce, Zoom, Reveal } from "react-awesome-reveal";
-//import { Parallax, Background } from 'react-parallax';
+import React from "react";
 
-import webDesignHeading from '../../assets/images/web/svg/webDesignHeading.svg';
+import { NavLink } from "react-router-dom";
+import { JackInTheBox, Fade, Rotate, Bounce, Zoom } from "react-awesome-reveal";
 
-import slide1 from '../../assets/images/web/arbor.png';
-import slide1Left from '../../assets/images/web/svg/slide1-left-bottom.svg';
-import slide1Right from '../../assets/images/web/svg/slide1-right-bottom.svg';
+// import webDesignHeading from '../../assets/images/web/svg/webDesignHeading.svg';
 
-import slide2 from '../../assets/images/web/eshop.png';
-import slide2Right from '../../assets/images/web/svg/slide2-right-bottom.png';
-import slide2Left from '../../assets/images/web/svg/slide2-left-bottom.png';
+import slide1 from "../../assets/images/web/arbor.png";
+import slide1Left from "../../assets/images/web/svg/slide1-left-bottom.svg";
+import slide1Right from "../../assets/images/web/svg/slide1-right-bottom.svg";
 
-import slide3 from '../../assets/images/web/theautopartsshop.png';
-import slide3Right from '../../assets/images/web/svg/slide3-right-bottom.png';
-import slide3Left from '../../assets/images/web/svg/slide3-left-bottom.png';
+import slide2 from "../../assets/images/web/eshop.png";
+import slide2Right from "../../assets/images/web/svg/slide2-right-bottom.png";
+import slide2Left from "../../assets/images/web/svg/slide2-left-bottom.png";
 
-import slide4 from '../../assets/images/web/trianz.png';
-import slide4Right from '../../assets/images/web/svg/slide4-right-bottom.svg';
-import slide4Left from '../../assets/images/web/svg/slide4-left-bottom.svg';
+import slide3 from "../../assets/images/web/theautopartsshop.png";
+import slide3Right from "../../assets/images/web/svg/slide3-right-bottom.png";
+import slide3Left from "../../assets/images/web/svg/slide3-left-bottom.png";
 
-import slide5 from '../../assets/images/web/hajoona.png';
-import slide5Right from '../../assets/images/web/svg/slide5-right-bottom.png';
-import slide5Left from '../../assets/images/web/svg/slide5-left-bottom.png';
+import slide4 from "../../assets/images/web/trianz.png";
+import slide4Right from "../../assets/images/web/svg/slide4-right-bottom.svg";
+import slide4Left from "../../assets/images/web/svg/slide4-left-bottom.svg";
 
-import slide6 from '../../assets/images/web/forever.png';
-import slide6Left from '../../assets/images/web/svg/slide6-right-bottom.png';
-import slide6Right from '../../assets/images/web/svg/slide6-left-bottom.png';
+import slide5 from "../../assets/images/web/hajoona.png";
+import slide5Right from "../../assets/images/web/svg/slide5-right-bottom.png";
+import slide5Left from "../../assets/images/web/svg/slide5-left-bottom.png";
 
-import slide7 from '../../assets/images/web/infosky.png';
-import slide7Right from '../../assets/images/web/svg/slide7-right-bottom.png';
-import slide7Left from '../../assets/images/web/svg/slide7-left-bottom.png';
+import slide6 from "../../assets/images/web/forever.png";
+import slide6Left from "../../assets/images/web/svg/slide6-right-bottom.png";
+import slide6Right from "../../assets/images/web/svg/slide6-left-bottom.png";
 
-import slide8 from '../../assets/images/web/morethanjustpart.png';
-import slide8Right from '../../assets/images/web/svg/slide8-right-bottom.png';
-import slide8Left from '../../assets/images/web/svg/slide8-left-bottom.png';
+import slide7 from "../../assets/images/web/infosky.png";
+import slide7Right from "../../assets/images/web/svg/slide7-right-bottom.png";
+import slide7Left from "../../assets/images/web/svg/slide7-left-bottom.png";
 
-import slide9 from '../../assets/images/web/ds3.png';
-import slide9Right from '../../assets/images/web/svg/slide9-right-bottom.png';
-import slide9Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
+import slide8 from "../../assets/images/web/morethanjustpart.png";
+import slide8Right from "../../assets/images/web/svg/slide8-right-bottom.png";
+import slide8Left from "../../assets/images/web/svg/slide8-left-bottom.png";
 
+import slide9 from "../../assets/images/web/ds3.png";
+import slide9Right from "../../assets/images/web/svg/slide9-right-bottom.png";
+//import slide9Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
 
-import slide10 from '../../assets/images/web/speedtrader.png';
-import slide10Right from '../../assets/images/web/svg/slide10-right-bottom.png';
-import slide10Left from '../../assets/images/web/svg/slide10-left-bottom.png';
+import slide10 from "../../assets/images/web/speedtrader.png";
+import slide10Right from "../../assets/images/web/svg/slide10-right-bottom.png";
+import slide10Left from "../../assets/images/web/svg/slide10-left-bottom.png";
 
+import slide11 from "../../assets/images/web/oralarchitect.png";
+import slide11Right from "../../assets/images/web/svg/slide11-right-bottom.png";
+import slide11Left from "../../assets/images/web/svg/slide11-left-bottom.png";
 
-import slide11 from '../../assets/images/web/oralarchitect.png';
-import slide11Right from '../../assets/images/web/svg/slide11-right-bottom.png';
-import slide11Left from '../../assets/images/web/svg/slide11-left-bottom.png';
+import slide12 from "../../assets/images/web/relianceprimary.png";
+import slide12Right from "../../assets/images/web/svg/slide12-right-bottom.png";
+import slide12Left from "../../assets/images/web/svg/slide12-left-bottom.png";
 
+// import slide13 from '../../assets/images/web/stayextra.png';
+// import slide13Right from '../../assets/images/web/svg/slide8-right-bottom.svg';
+// import slide13Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
 
-import slide12 from '../../assets/images/web/relianceprimary.png';
-import slide12Right from '../../assets/images/web/svg/slide12-right-bottom.png';
-import slide12Left from '../../assets/images/web/svg/slide12-left-bottom.png';
+import slide14 from "../../assets/images/web/icd.png";
+import slide14Right from "../../assets/images/web/svg/slide14-right-bottom.png";
+//import slide14Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
 
+import slide15 from "../../assets/images/web/chalothirth.png";
+import slide15Right from "../../assets/images/web/svg/slide15-right-bottom.png";
+import slide15Left from "../../assets/images/web/svg/slide15-left-bottom.png";
 
-import slide13 from '../../assets/images/web/stayextra.png';
-import slide13Right from '../../assets/images/web/svg/slide8-right-bottom.svg';
-import slide13Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
+import slide16 from "../../assets/images/web/edrugsafety.png";
+import slide16Right from "../../assets/images/web/svg/slide16-right-bottom.png";
+import slide16Left from "../../assets/images/web/svg/slide16-left-bottom.png";
 
+import slide17 from "../../assets/images/web/csr.png";
+import slide17Right from "../../assets/images/web/svg/slide17-right-bottom.png";
+import slide17Left from "../../assets/images/web/svg/slide17-left-bottom.png";
 
-import slide14 from '../../assets/images/web/icd.png';
-import slide14Right from '../../assets/images/web/svg/slide14-right-bottom.png';
-import slide14Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
+import slide18 from "../../assets/images/web/techtinder.png";
+import slide18Right from "../../assets/images/web/svg/slide18-right-bottom.png";
+import slide18Left from "../../assets/images/web/svg/slide18-left-bottom.png";
 
-import slide15 from '../../assets/images/web/chalothirth.png';
-import slide15Right from '../../assets/images/web/svg/slide15-right-bottom.png';
-import slide15Left from '../../assets/images/web/svg/slide15-left-bottom.png';
-
-import slide16 from '../../assets/images/web/edrugsafety.png';
-import slide16Right from '../../assets/images/web/svg/slide16-right-bottom.png';
-import slide16Left from '../../assets/images/web/svg/slide16-left-bottom.png';
-
-import slide17 from '../../assets/images/web/csr.png';
-import slide17Right from '../../assets/images/web/svg/slide17-right-bottom.png';
-import slide17Left from '../../assets/images/web/svg/slide17-left-bottom.png';
-import ScrollTop from '../ScrollTop';
+import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 
 function Webdesign() {
@@ -129,11 +128,11 @@ function Webdesign() {
                     <NavLink className="slide_link slide1_link" to="/"></NavLink>
                   </div>
                 </Fade> */}
-                <Rotate direction="right">
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide1Right} alt="" />
                   </div>
-                </Rotate>
+                </Fade>
                 <Bounce>
                   <div className="link">
                     <NavLink
@@ -147,7 +146,7 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-            {/* eshopbox Gym */}
+            {/* eshopbox */}
             <div className="screen-container">
               <div className="web-slide slide2">
                 <Zoom>
@@ -157,20 +156,20 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <JackInTheBox>
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide2Right} alt="" />
                   </div>
-                </JackInTheBox>
-                <Fade>
+                </Fade>
+                <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide2Left} alt="" />
                   </div>
-                </Fade>
+                </JackInTheBox>
                 <Bounce>
                   <div className="link">
                     <NavLink
-                      to={"https://www.eshopbox.com/"}
+                      to={"https://www.eshopbox.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -180,7 +179,7 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-            {/* Talk Cast */}
+            {/* theautopartsshop */}
             <div className="screen-container">
               <div className="web-slide slide3">
                 <Zoom>
@@ -190,20 +189,20 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Fade>
+                <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide3Left} alt="" />
                   </div>
-                </Fade>
-                <Rotate>
+                </JackInTheBox>
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide3Right} alt="" />
                   </div>
-                </Rotate>
+                </Fade>
                 <Bounce>
                   <div className="link link-slide3">
                     <NavLink
-                      to={"https://theautopartsshop.com/"}
+                      to={"https://theautopartsshop.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -213,7 +212,7 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-            {/* Aqua Trade */}
+            {/*https://www.trianz.com */}
             <div className="screen-container">
               <div className="web-slide slide4">
                 <Zoom>
@@ -223,19 +222,23 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Fade>
+                <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide4Left} alt="" />
                   </div>
-                </Fade>
-                <Rotate>
+                </JackInTheBox>
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide4Right} alt="" />
                   </div>
-                </Rotate>
+                </Fade>
                 <Bounce>
                   <div className="link">
-                    <NavLink to={"/"} target="_blank" rel="nofollow">
+                    <NavLink
+                      to={"https://www.trianz.com"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
                       Web link
                     </NavLink>
                   </div>
@@ -252,20 +255,20 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Fade>
+                <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide5Left} alt="" />
                   </div>
-                </Fade>
-                <Rotate>
+                </JackInTheBox>
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide5Right} alt="" />
                   </div>
-                </Rotate>
+                </Fade>
                 <Bounce>
                   <div className="link">
                     <NavLink
-                      to={"https://hajoona.com/"}
+                      to={"https://hajoona.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -285,20 +288,20 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Fade>
+                <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide6Left} alt="" />
                   </div>
-                </Fade>
-                <Rotate>
+                </JackInTheBox>
+                <Fade>
                   <div className="slide-right-img">
                     <img src={slide6Right} alt="" />
                   </div>
-                </Rotate>
+                </Fade>
                 <Bounce>
                   <div className="link link-slide6">
                     <NavLink
-                      to={"https://foreverliving.com/"}
+                      to={"https://foreverliving.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -331,7 +334,7 @@ function Webdesign() {
                 <Bounce>
                   <div className="link link-slide7">
                     <NavLink
-                      to={"https://www.infoskysolutions.com/"}
+                      to={"https://www.infoskysolutions.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -364,7 +367,7 @@ function Webdesign() {
                 <Bounce>
                   <div className="link link-slide8">
                     <NavLink
-                      to={"https://morethanjustparks.com/"}
+                      to={"https://morethanjustparks.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -398,7 +401,41 @@ function Webdesign() {
                 <Bounce>
                   <div className="link link-slide8">
                     <NavLink
-                      to={"https://ds3-software.de/"}
+                      to={"https://ds3-software.de"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Web link
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+
+            {/* https://tech-tinder.com */}
+            <div className="screen-container">
+              <div className="web-slide slide18">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide18} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <JackInTheBox>
+                  <div className="slide-left-img">
+                    <img src={slide18Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide18Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link link-slide8">
+                    <NavLink
+                      to={"https://tech-tinder.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -432,7 +469,7 @@ function Webdesign() {
                 <Bounce>
                   <div className="link link-slide8">
                     <NavLink
-                      to={"https://speedtrader.com/"}
+                      to={"https://speedtrader.com"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -466,7 +503,7 @@ function Webdesign() {
                 <Bounce>
                   <div className="link link-slide8">
                     <NavLink
-                      to={"https://oral-architect.com/"}
+                      to={"https://oral-architect.com"}
                       target="_blank"
                       rel="nofollow"
                     >
