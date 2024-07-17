@@ -20,6 +20,7 @@ import Resume from "./Component/Resume";
 import Contact from "./Component/Contact";
 import Logo from "./Component/Logo";
 import { JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
+import Sassdesign from "./Component/Sassdesign";
 
 function Menu({ onMenuChildComponentClick }) {
   const location = useLocation();
@@ -88,7 +89,10 @@ function App() {
               </div>
               <div className="nav-link">
                 <Bounce>
-                  <NavLink to="/portfolio/sass" onClick={() => menuOnClick()}>
+                  <NavLink
+                    to="/portfolio/sass-design"
+                    onClick={() => menuOnClick()}
+                  >
                     Sass
                   </NavLink>
                 </Bounce>
@@ -193,6 +197,7 @@ function App() {
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/app-design" element={<Appportfolio />} />
           <Route path="/portfolio/web-design" element={<Webdesign />} />
+          <Route path="/portfolio/sass-design" element={<Sassdesign />} />
           <Route path="/portfolio/resume" element={<Resume />} />
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />

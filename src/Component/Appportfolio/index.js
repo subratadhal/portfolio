@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { JackInTheBox, Fade, Rotate, Bounce, Zoom } from "react-awesome-reveal";
+import { JackInTheBox, Fade, Bounce, Zoom } from "react-awesome-reveal";
 
 // import portfolioTitle from "../../assets/images/app/svg/appDesignHeading.svg";
 

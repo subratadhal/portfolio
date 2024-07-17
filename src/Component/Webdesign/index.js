@@ -1,17 +1,13 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
-import { JackInTheBox, Fade, Rotate, Bounce, Zoom } from "react-awesome-reveal";
+import { JackInTheBox, Fade, Bounce, Zoom } from "react-awesome-reveal";
 
 // import webDesignHeading from '../../assets/images/web/svg/webDesignHeading.svg';
 
 import slide1 from "../../assets/images/web/arbor.png";
 import slide1Left from "../../assets/images/web/svg/slide1-left-bottom.svg";
 import slide1Right from "../../assets/images/web/svg/slide1-right-bottom.svg";
-
-import slide2 from "../../assets/images/web/eshop.png";
-import slide2Right from "../../assets/images/web/svg/slide2-right-bottom.png";
-import slide2Left from "../../assets/images/web/svg/slide2-left-bottom.png";
 
 import slide3 from "../../assets/images/web/theautopartsshop.png";
 import slide3Right from "../../assets/images/web/svg/slide3-right-bottom.png";
@@ -146,39 +142,7 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-            {/* eshopbox */}
-            <div className="screen-container">
-              <div className="web-slide slide2">
-                <Zoom>
-                  <div>
-                    <Fade>
-                      <img src={slide2} alt="" className="main-image" />
-                    </Fade>
-                  </div>
-                </Zoom>
-                <Fade>
-                  <div className="slide-right-img">
-                    <img src={slide2Right} alt="" />
-                  </div>
-                </Fade>
-                <JackInTheBox>
-                  <div className="slide-left-img">
-                    <img src={slide2Left} alt="" />
-                  </div>
-                </JackInTheBox>
-                <Bounce>
-                  <div className="link">
-                    <NavLink
-                      to={"https://www.eshopbox.com"}
-                      target="_blank"
-                      rel="nofollow"
-                    >
-                      Web link
-                    </NavLink>
-                  </div>
-                </Bounce>
-              </div>
-            </div>
+
             {/* theautopartsshop */}
             <div className="screen-container">
               <div className="web-slide slide3">

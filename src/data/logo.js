@@ -19,4 +19,24 @@ export const logoData = [
     title: "QuickEats",
     url: "quickeats-logo-design.png",
   },
+  {
+    id: "5",
+    title: "KaDental",
+    url: "kadental.png",
+  },
+  {
+    id: "6",
+    title: "YtellMedia",
+    url: "ytellmedia.png",
+  },
+  {
+    id: "7",
+    title: "Reliance Primary",
+    url: "relianceprimary.png",
+  },
+  {
+    id: "8",
+    title: "The Royal Fish",
+    url: "theroyalfish.png",
+  },
 ];
