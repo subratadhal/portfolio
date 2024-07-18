@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f2eefe34.css",
-    "main.js": "/portfolio/static/js/main.26797e75.js",
+    "main.css": "/portfolio/static/css/main.b34e516d.css",
+    "main.js": "/portfolio/static/js/main.c1066c1c.js",
     "static/js/453.0e004c73.chunk.js": "/portfolio/static/js/453.0e004c73.chunk.js",
     "static/media/ChitChat.png": "/portfolio/static/media/ChitChat.d32209e4b03e419a189b.png",
     "static/media/banner-beenow.png": "/portfolio/static/media/banner-beenow.857c7d86d5ce239f7972.png",
@@ -84,12 +84,12 @@
     "static/media/r.svg": "/portfolio/static/media/r.c1c0949089a7cb7dbd3d.svg",
     "static/media/v.svg": "/portfolio/static/media/v.298acdf80fcb76cace5c.svg",
     "static/media/y.svg": "/portfolio/static/media/y.9b3c956b1de3f5111ed8.svg",
-    "main.f2eefe34.css.map": "/portfolio/static/css/main.f2eefe34.css.map",
-    "main.26797e75.js.map": "/portfolio/static/js/main.26797e75.js.map",
+    "main.b34e516d.css.map": "/portfolio/static/css/main.b34e516d.css.map",
+    "main.c1066c1c.js.map": "/portfolio/static/js/main.c1066c1c.js.map",
     "453.0e004c73.chunk.js.map": "/portfolio/static/js/453.0e004c73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2eefe34.css",
-    "static/js/main.26797e75.js"
+    "static/css/main.b34e516d.css",
+    "static/js/main.c1066c1c.js"
   ]
 }
