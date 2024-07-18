@@ -1625,6 +1625,12 @@ svg {
         width: 232px;
         height: 333px;
         background: transparent url('../images/windmill-bg.svg') no-repeat;
+        @media(max-width: 767px){
+            width: 400px;
+            height: 400px;
+            right: -103px;
+            background-size: 281px;
+        }
         .windmill-blades{
             position: absolute;
             top: 85px;
@@ -1633,6 +1639,10 @@ svg {
             height: 128px;
             background: url('../images/windmill-blads.svg') no-repeat center center;
             animation: rotating 10s linear infinite;
+             @media(max-width: 767px){
+                top: 115px;
+                left: 134px;
+             }
         }
     }
     .crative{
@@ -1851,16 +1861,25 @@ svg {
         top: 0;
         width: 14%;
         height: 50px;
+        @media(max-width: 767px){
+            width: 90%;
+            margin: 0 5%;
+        }
         ul{
             display: flex;
             flex-direction: row;
             width: 100%;
+            @media(max-width: 767px){
+                padding-left: 0;
+                margin: 0;
+            }
             li{
                 width: 17%;
                 height: 30px;
                 margin: 0 5px 0 0;
                 position: relative;
                 height: 400px;
+
                 .line{
                     position: absolute;
                     width: 2px;
@@ -1877,7 +1896,24 @@ svg {
                     height: 6px;
                     left:50%;
                     margin-left: -3px;
-                    bottom: 0;                   
+                    bottom: 0;      
+                     @media(max-width: 767px){
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50px;
+                        left: 50%;
+                        margin-left: -50%;
+                        bottom: 0;
+                        padding: 5px;
+                        text-align: center;
+                        line-height: 17px;
+                        font-size: 17px;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: "Swanky and Moo Moo", cursive;
+                     }
                 }
                 &:first-child,
                 &:nth-child(6){
@@ -1886,6 +1922,8 @@ svg {
                         background: #FF7B7B;
                     }
                 }
+                                            
+                  
                 &:nth-child(2),
                 &:nth-child(5){
                     .line,
@@ -1900,23 +1938,89 @@ svg {
                         background: #FF00D6;
                     }
                 }
-                &:first-child{
-                    animation: heightChangeFirstChild 10s infinite;
+                @media(max-width: 767px){
+                    &:first-child{
+                        .line,
+                        .circle{
+                            background: #442299;
+                            a{color: #e8b71d;}
+                        }
+                    }
+                    &:nth-child(2){
+                        .line,
+                        .circle{
+                            background: #4444dd;
+                            a{color: #f19f23;}
+                        }
+                    }
+                    &:nth-child(3){
+                        .line,
+                        .circle{
+                            background: #12bdb9;
+                             a{color: #053a00;}
+                        }
+                    }                    
+                    &:nth-child(4){
+                        .line,
+                        .circle{
+                            background: #aacc22;
+                             a{color: #120a42;}
+                        }
+                    }
+                    &:nth-child(5){
+                        .line,
+                        .circle{
+                            background: #feae2d;
+                             a{color: #132514;}
+                        }
+                    }
+                    &:nth-child(6){
+                        .line,
+                        .circle{
+                            background: #ff4422;
+                             a{color: #cbf123;}
+                             font-size: 14px;
+                        }
+                    }  
                 }
-                &:nth-child(2){
-                    animation: heightChangeSecondChild 15s infinite;
-                }
-                &:nth-child(3){
-                    animation: heightChangeThirdChild 8s infinite;
-                }
-                &:nth-child(4){
-                    animation: heightChangeForthChild 6s infinite;
-                }
-                &:nth-child(5){
-                    animation: heightChangeFifthChild 20s infinite;
-                }
-                &:nth-child(6){
-                    animation: heightChangeSixthChild 12s infinite;
+                 &:first-child{
+                        animation: heightChangeFirstChildDesk 10s infinite;
+                    }
+                    &:nth-child(2){
+                        animation: heightChangeSecondChildDesk 15s infinite;
+                    }
+                    &:nth-child(3){
+                        animation: heightChangeThirdChildDesk 8s infinite;
+                    }
+                    &:nth-child(4){
+                        animation: heightChangeForthChildDesk 6s infinite;
+                    }
+                    &:nth-child(5){
+                        animation: heightChangeFifthChildDesk 20s infinite;
+                    }
+                    &:nth-child(6){
+                        animation: heightChangeSixthChildDesk 12s infinite;
+                    }
+                //mobile 
+                 @media(max-width: 767px){
+                    &:first-child{
+                        animation: heightChangeFirstChild 10s infinite;
+                    }
+                    &:nth-child(2){
+                        animation: heightChangeSecondChild 15s infinite;
+                    }
+                    &:nth-child(3){
+                        animation: heightChangeThirdChild 8s infinite;
+                    }
+                    &:nth-child(4){
+                        animation: heightChangeForthChild 6s infinite;
+                    }
+                    &:nth-child(5){
+                        animation: heightChangeFifthChild 20s infinite;
+                    }
+                    &:nth-child(6){
+                        animation: heightChangeSixthChild 12s infinite;
+                    }
                 }
             }
         }
@@ -1927,7 +2031,8 @@ svg {
     to { transform: rotate(360deg); }
 }
 
-@keyframes heightChangeFirstChild {
+//desktop
+@keyframes heightChangeFirstChildDesk {
     0%, 100% {
       height: 480px;
     }
@@ -1935,7 +2040,7 @@ svg {
       height: 380px;
     }
 }
-@keyframes heightChangeSecondChild {
+@keyframes heightChangeSecondChildDesk {
     0%, 100% {
       height: 300px;
     }
@@ -1943,7 +2048,7 @@ svg {
       height: 400px;
     }
 }  
-@keyframes heightChangeThirdChild {
+@keyframes heightChangeThirdChildDesk {
     0%, 100% {
       height: 440px;
     }
@@ -1951,7 +2056,7 @@ svg {
       height: 370px;
     }
 }  
-@keyframes heightChangeForthChild {
+@keyframes heightChangeForthChildDesk {
     0%, 100% {
       height: 300px;
     }
@@ -1959,7 +2064,7 @@ svg {
       height: 430px;
     }
 }
-@keyframes heightChangeFifthChild {
+@keyframes heightChangeFifthChildDesk {
     0%, 100% {
       height: 450px;
     }
@@ -1967,12 +2072,61 @@ svg {
       height: 350px;
     }
 }  
-@keyframes heightChangeSixthChild {
+@keyframes heightChangeSixthChildDesk {
     0%, 100% {
       height: 350px;
     }
     50% {
       height: 395px;
+    }
+}  
+// mobile
+@keyframes heightChangeFirstChild {
+    0%, 100% {
+      height: calc(100vh - 100px);
+    }
+    50% {
+      height: calc(100vh - 300px);
+    }
+}
+@keyframes heightChangeSecondChild {
+    0%, 100% {
+       height: calc(100vh - 450px);
+    }
+    50% {
+      height: calc(100vh - 600px);
+    }
+}  
+@keyframes heightChangeThirdChild {
+    0%, 100% {
+       height: calc(100vh - 500px);
+    }
+    50% {
+       height: calc(100vh - 300px);
+    }
+}  
+@keyframes heightChangeForthChild {
+    0%, 100% {
+       height: calc(100vh - 450px);
+    }
+    50% {
+      height: calc(100vh - 650px);
+    }
+}
+@keyframes heightChangeFifthChild {
+    0%, 100% {
+       height: calc(100vh - 300px);
+    }
+    50% {
+       height: calc(100vh - 650px);
+    }
+}  
+@keyframes heightChangeSixthChild {
+    0%, 100% {
+       height: calc(100vh - 450px);
+    }
+    50% {
+       height: calc(100vh - 700px);
     }
 }  
 /********************* 

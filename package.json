@@ -15,6 +15,7 @@
     "node-sass": "^7.0.3",
     "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.11",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-draggable": "^4.4.6",
     "react-fast-marquee": "^1.6.4",
