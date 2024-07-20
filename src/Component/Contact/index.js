@@ -3,6 +3,7 @@ import ScrollTop from '../ScrollTop';
 import PaginationCommon from "../PaginationCommon";
 import Heading from "../Heading";
 import { NavLink } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 const SetArrow = () => {
   return (
@@ -71,57 +72,96 @@ function Contact() {
               <div className="col">
                 <div className="contact-links">
                   <h3>Social Links</h3>
-                  <ul>
-                    <li>
-                      <NavLink
-                        to={`https://www.linkedin.com/in/subratadhal`}
-                        rel="nofollow"
-                        target="_blank"
-                      >
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/cms-page-icons/linkedin.svg`}
-                          alt=""
-                        />
-                        https://www.linkedin.com/in/subratadhal
-                        <SetArrow></SetArrow>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to={`https://www.behance.net/subratadha81b8`}
-                        rel="nofollow"
-                        target="_blank"
-                      >
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/cms-page-icons/behance.svg`}
-                          alt=""
-                        />
-                        https://www.behance.net/subratadha81b8
-                        <SetArrow></SetArrow>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to={`https://in.pinterest.com/subratadhal`}
-                        rel="nofollow"
-                        target="_blank"
-                      >
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/cms-page-icons/pinterest.svg`}
-                          alt=""
-                        />
-                        https://in.pinterest.com/subratadhal
-                        <SetArrow></SetArrow>
-                      </NavLink>
-                    </li>
-                  </ul>
+                  {isMobile ? (
+                    <ul className="mobile-social-links">
+                      <li>
+                        <NavLink
+                          to={`https://www.linkedin.com/in/subratadhal`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/linkedin.svg`}
+                            alt=""
+                          />
+                        </NavLink>
+
+                        <NavLink
+                          to={`https://www.behance.net/subratadha81b8`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/behance.svg`}
+                            alt=""
+                          />
+                        </NavLink>
+
+                        <NavLink
+                          to={`https://in.pinterest.com/subratadhal`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/pinterest.svg`}
+                            alt=""
+                          />
+                        </NavLink>
+                      </li>
+                    </ul>
+                  ) : (
+                    <ul className="desktop-social-links">
+                      <li>
+                        <NavLink
+                          to={`https://www.linkedin.com/in/subratadhal`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/linkedin.svg`}
+                            alt=""
+                          />
+                          https://www.linkedin.com/in/subratadhal
+                          <SetArrow></SetArrow>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to={`https://www.behance.net/subratadha81b8`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/behance.svg`}
+                            alt=""
+                          />
+                          https://www.behance.net/subratadha81b8
+                          <SetArrow></SetArrow>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to={`https://in.pinterest.com/subratadhal`}
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/cms-page-icons/pinterest.svg`}
+                            alt=""
+                          />
+                          https://in.pinterest.com/subratadhal
+                          <SetArrow></SetArrow>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </section>{" "}
       </div>
-      <PaginationCommon linkData={linkData} />
+      {!isMobile ? <PaginationCommon linkData={linkData} /> : ""}
       <ScrollTop />
     </>
   );

@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
-import LogoImage from '../../assets/images/svg/logo.svg';
 import { logoData } from "../../data/logo";
 import ScrollTop from "../ScrollTop";
 import { Fade, JackInTheBox } from "react-awesome-reveal";

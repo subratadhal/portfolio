@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 function Casestudylist() {
   return (
     <>
-      <Heading title="case study" type="colored1" />
+      <Heading title="Case Study" type="colored1" />
 
       <div className="container">
         <div className="row">

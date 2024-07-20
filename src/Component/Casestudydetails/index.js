@@ -1,19 +1,16 @@
 import React, { useState, useEffect, useRef  } from 'react';
 import { useParams } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
-import {stockData} from '../../data/casestudy';
-import ReactPlayer from 'react-player';
-import { NavLink } from 'react-router-dom';
-import PaginationCaseStudy from '../PaginationCaseStudy';
-import ScrollTop from '../ScrollTop';
-
+import { stockData } from "../../data/casestudy";
+import PaginationCaseStudy from "../PaginationCaseStudy";
+import ScrollTop from "../ScrollTop";
 
 function Casestudydetails(props) {
   const [item, setIitem] = useState({});
-  const { id } = useParams(); 
+  const { id } = useParams();
 
   useEffect(() => {
-    const arrayItem = stockData.find(item => item.slug === id);
+    const arrayItem = stockData.find((item) => item.slug === id);
     setIitem(arrayItem);
     window.scrollTo(0, 0);
   }, [id]);
@@ -102,34 +99,40 @@ function Casestudydetails(props) {
                   {item?.ScopeContent}
                 </p>
 
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col ui-ux-section">
-                      <img
-                        src={`${
-                          process.env.PUBLIC_URL
-                        }/images/casestudy/${"ux.svg"}`}
-                        alt=""
-                      />
-                      <h3 style={{ color: item?.color?.primary }}>UX Design</h3>
-                      <p style={{ color: item?.color?.secondary }}>
-                        {item?.ScopeUxDesign}
-                      </p>
-                    </div>
-                    <div className="col ui-ux-section">
-                      <img
-                        src={`${
-                          process.env.PUBLIC_URL
-                        }/images/casestudy/${"ui.svg"}`}
-                        alt=""
-                      />
-                      <h3 style={{ color: item?.color?.primary }}>UI Design</h3>
-                      <p style={{ color: item?.color?.secondary }}>
-                        {item?.ScopeUiDesign}
-                      </p>
+                {item?.ScopeUxDesign && (
+                  <div className="container-fluid">
+                    <div className="row">
+                      <div className="col ui-ux-section">
+                        <img
+                          src={`${
+                            process.env.PUBLIC_URL
+                          }/images/casestudy/${"ux.svg"}`}
+                          alt=""
+                        />
+                        <h3 style={{ color: item?.color?.primary }}>
+                          UX Design
+                        </h3>
+                        <p style={{ color: item?.color?.secondary }}>
+                          {item?.ScopeUxDesign}
+                        </p>
+                      </div>
+                      <div className="col ui-ux-section">
+                        <img
+                          src={`${
+                            process.env.PUBLIC_URL
+                          }/images/casestudy/${"ui.svg"}`}
+                          alt=""
+                        />
+                        <h3 style={{ color: item?.color?.primary }}>
+                          UI Design
+                        </h3>
+                        <p style={{ color: item?.color?.secondary }}>
+                          {item?.ScopeUiDesign}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
@@ -271,10 +274,10 @@ function Casestudydetails(props) {
           <div className="container">
             <div className="row">
               <div className="col">
-                <div className="section-cs portfolio-video">
+                <div className="section-cs portfolio-colorpalate">
                   <h2 style={{ color: item?.color?.primary }}>Color Palette</h2>
                   <img
-                    className="user-flow-img"
+                    className="colorpalate-img"
                     src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.colorPalate}`}
                     alt=""
                   />
@@ -289,10 +292,10 @@ function Casestudydetails(props) {
           <div className="container">
             <div className="row">
               <div className="col">
-                <div className="section-cs portfolio-video">
+                <div className="section-cs logo-design">
                   <h2 style={{ color: item?.color?.primary }}>Logo Design</h2>
                   <img
-                    className="user-flow-img"
+                    className="logo-design-img"
                     src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.logoDesign}`}
                     alt=""
                   />

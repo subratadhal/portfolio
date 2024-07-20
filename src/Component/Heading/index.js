@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  Hinge,
-  JackInTheBox,
-  Roll,
-  Slide,
-  ZoomRoll,
-  Fade,
-  Rotate,
-  Flip,
-  Bounce,
-  Zoom,
-  Reveal,
-} from "react-awesome-reveal";
+import { JackInTheBox, Rotate, Bounce, Zoom } from "react-awesome-reveal";
 
 function Heading(props) {
   return (

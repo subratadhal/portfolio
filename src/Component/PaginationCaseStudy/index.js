@@ -1,16 +1,17 @@
-import React, { useState, useEffect, useRef  } from 'react';
-import { NavLink } from 'react-router-dom';
-import {stockData} from '../../data/casestudy';
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { stockData } from "../../data/casestudy";
+import { isMobile } from "react-device-detect";
 
 function PaginationCaseStudy(props) {
-
   const slug = props.slug;
   const [previousData, setPreviousData] = useState();
   const [nextData, setNextData] = useState();
 
   useEffect(() => {
-    const currentIndex = stockData.findIndex(item => item.slug === slug);
-    const previousIndex = (currentIndex - 1 + stockData.length) % stockData.length;
+    const currentIndex = stockData.findIndex((item) => item.slug === slug);
+    const previousIndex =
+      (currentIndex - 1 + stockData.length) % stockData.length;
     const PreviousData = getDataByIndex(previousIndex);
     setPreviousData(PreviousData);
     const nextIndex = (currentIndex + 1) % stockData.length;
@@ -40,7 +41,7 @@ function PaginationCaseStudy(props) {
                     src={`${process.env.PUBLIC_URL}/images/casestudy/${previousData?.paginationBanner}`}
                     alt=""
                   />
-                  <span>{previousData?.title}</span>
+                  {!isMobile && <span>{previousData?.title}</span>}
                 </NavLink>
               </div>
 
@@ -63,7 +64,7 @@ function PaginationCaseStudy(props) {
                     src={`${process.env.PUBLIC_URL}/images/casestudy/${nextData?.paginationBanner}`}
                     alt=""
                   />
-                  <span>{nextData?.title}</span>
+                  {!isMobile && <span>{nextData?.title}</span>}
                 </NavLink>
               </div>
             </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import ScrollTop from '../ScrollTop';
-import resumeHeading from '../../assets/images/resume/resume.svg';
-import { NavLink } from 'react-router-dom';
+import { isMobile } from "react-device-detect";
 import PaginationCommon from "../PaginationCommon";
 import Heading from "../Heading";
 
@@ -200,7 +199,7 @@ function Resume(props) {
           </div>
         </div>
       </section>
-      <PaginationCommon linkData={linkData} />
+      {!isMobile ? <PaginationCommon linkData={linkData} /> : ""}
       <ScrollTop />
     </div>
   );
