@@ -49,8 +49,8 @@ export const stockData = [
       "The world's newest smartphone app for food delivery is called QuickEats.",
     ScopeContent:
       "In crafting the user interface (UI) and user experience (UX) design, emphasis will be placed on creating an intuitive layout and seamless navigation, ensuring users can easily access the app's features. User authentication and profile management will be streamlined, offering convenient registration and login options while enabling users to personalize their profiles with preferences and payment details. Restaurant listings and search functionalities will be robust, allowing users to discover eateries based on various criteria such as cuisine type, location, and ratings. Menu display and customization features will provide detailed descriptions and options for tailoring orders to individual preferences, enhancing user satisfaction. Order placement and payment processes will be straightforward, with secure transactions and multiple payment gateways supported. Real-time order tracking will offer transparency and convenience, allowing users to monitor their orders from preparation to delivery. Notifications and alerts will keep users informed about order status updates, promotions, and important announcements, enhancing engagement and user experience. Additionally, a system for reviews and feedback will encourage user participation and provide valuable insights for both users and restaurant owners, fostering a community-driven environment.o provide a strong digital product, the project included graphic designers, UX-UI designers, illustrators, and developers.",
-    ScopeUxDesign: "ddddd",
-    ScopeUiDesign: "dddd",
+    ScopeUxDesign: "",
+    ScopeUiDesign: "",
     ScopeUiDevelopment:
       "We segment the UI into autonomous, reusable elements to construct features and integrate diverse components within the system.",
     ProjectGoal:
@@ -106,7 +106,6 @@ export const stockData = [
       "beenow/screens/Location_screen02.png",
       "beenow/screens/Location_screen03.png",
       "beenow/screens/profile.png",
-      "beenow/screens/call.png",
       "beenow/screens/confirm-location.png",
       "beenow/screens/ride-history-details.png",
       "beenow/screens/message.png",
