@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import ReactPlayer from "react-player";
 import { stockData } from "../../data/casestudy";
 import PaginationCaseStudy from "../PaginationCaseStudy";
 import ScrollTop from "../ScrollTop";
+import Beenow from "../../assets/images/video/beenow.mp4";
 
 function Casestudydetails(props) {
   const [item, setIitem] = useState({});
@@ -305,7 +307,8 @@ function Casestudydetails(props) {
           </div>
         </section>
       )}
-      {/* {item?.prototypeVideo && (
+      {/* BeeNow */}
+      {item?.prototypeVideo === "BeeNow" && (
         <section>
           <div className="container">
             <div className="row">
@@ -314,13 +317,22 @@ function Casestudydetails(props) {
                   <h2 style={{ color: item?.color?.primary }}>
                     Prototype Video
                   </h2>
-                  <ReactPlayer url={item?.prototypeVideo} />
+                  <ReactPlayer
+                    url={Beenow}
+                    playing={true}
+                    controls={true}
+                    loop={true}
+                    muted={true}
+                    playsinline={true}
+                    width="70%"
+                    height="100%"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
-      )} */}
+      )}
       <section>
         <div
           className="container-fluid screens-section"

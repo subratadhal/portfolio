@@ -166,7 +166,7 @@ export const stockData = [
     paginationBanner: "beenow/pagination-banner.png",
     colorPalate: "beenow/Color-palate.png",
     logoDesign: "beenow/Logo-design.png",
-    prototypeVideo: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+    prototypeVideo: "BeeNow",
     type: ["App"],
   },
   {
