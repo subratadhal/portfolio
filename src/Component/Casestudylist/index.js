@@ -1,12 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from 'react-router-dom';
-import webDesignHeading from '../../assets/images/svg/case-study.svg';
-import {stockData} from '../../data/casestudy';
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { stockData } from "../../data/casestudy";
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 import { Fade } from "react-awesome-reveal";
 
 function Casestudylist() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Heading title="Case Study" type="colored1" />

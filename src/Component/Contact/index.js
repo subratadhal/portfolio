@@ -1,5 +1,5 @@
-import React from 'react';
-import ScrollTop from '../ScrollTop';
+import React, { useEffect } from "react";
+import ScrollTop from "../ScrollTop";
 import PaginationCommon from "../PaginationCommon";
 import Heading from "../Heading";
 import { NavLink } from "react-router-dom";
@@ -23,6 +23,12 @@ const SetArrow = () => {
 };
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const linkData = {
     prevLink: "/portfolio/about",
     prevTitle: "About",

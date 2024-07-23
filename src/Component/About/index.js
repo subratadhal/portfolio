@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import ScrollTop from "../ScrollTop";
 import PaginationCommon from "../PaginationCommon";
 import Heading from "../Heading";
 import { isMobile } from "react-device-detect";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const linkData = {
     prevLink: "/portfolio/resume",
     prevTitle: "Resume",
@@ -61,5 +67,5 @@ function About() {
     </>
   );
 }
- 
+
 export default About;

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,6 +16,12 @@ function Home() {
     cssEase: "linear",
     arrows: false,
   };
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   const [percentageStyle1, setPercentageStyle1] = useState(0);
   const [percentageStyle2, setPercentageStyle2] = useState(0);

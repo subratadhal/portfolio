@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef  } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import { stockData } from "../../data/casestudy";
 import PaginationCaseStudy from "../PaginationCaseStudy";

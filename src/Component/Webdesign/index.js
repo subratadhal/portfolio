@@ -1,10 +1,6 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { JackInTheBox, Fade, Bounce, Zoom } from "react-awesome-reveal";
-
-// import webDesignHeading from '../../assets/images/web/svg/webDesignHeading.svg';
-
 import slide1 from "../../assets/images/web/arbor.png";
 import slide1Left from "../../assets/images/web/svg/slide1-left-bottom.svg";
 import slide1Right from "../../assets/images/web/svg/slide1-right-bottom.svg";
@@ -49,13 +45,8 @@ import slide12 from "../../assets/images/web/relianceprimary.png";
 import slide12Right from "../../assets/images/web/svg/slide12-right-bottom.png";
 import slide12Left from "../../assets/images/web/svg/slide12-left-bottom.png";
 
-// import slide13 from '../../assets/images/web/stayextra.png';
-// import slide13Right from '../../assets/images/web/svg/slide8-right-bottom.svg';
-// import slide13Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
-
 import slide14 from "../../assets/images/web/icd.png";
 import slide14Right from "../../assets/images/web/svg/slide14-right-bottom.png";
-//import slide14Left from '../../assets/images/web/svg/slide8-left-bottom.svg';
 
 import slide15 from "../../assets/images/web/chalothirth.png";
 import slide15Right from "../../assets/images/web/svg/slide15-right-bottom.png";
@@ -77,28 +68,15 @@ import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 
 function Webdesign() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Heading title="Web Design" type="colored1" />
-      {/* <section className='header-panel'>
-        <div className="container">
-          <div className="row">
-            <div className="col"> 
-              <div className="header-panel-logo"> 
-                <img src={webDesignHeading} alt='' />
-                </div>  
-            </div>
-          </div>
-        </div>
-      </section>  */}
-      {/* <div className="container">
-        <div className="row">
-          <div className="col">
-<br /><br /><br /><br /><br /><br />
-          </div>
-          </div>
-          </div> */}
-
       <div className="container">
         <div className="row">
           <div className="col">
@@ -117,13 +95,6 @@ function Webdesign() {
                     <img src={slide1Left} alt="" />
                   </div>
                 </JackInTheBox>
-                {/* <Fade right>
-                  <div className='slide1_content_background'>
-                    <h2>The Auto Parts Shop</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled but also the leap</p>
-                    <NavLink className="slide_link slide1_link" to="/"></NavLink>
-                  </div>
-                </Fade> */}
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide1Right} alt="" />
@@ -142,7 +113,6 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-
             {/* theautopartsshop */}
             <div className="screen-container">
               <div className="web-slide slide3">
@@ -511,35 +481,6 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-
-            {/* Online food  */}
-            {/* <div className='screen-container'>
-              <div className='slide slide13'>
-                <Zoom>
-                  <div>
-                    <Fade>
-                      <img src={slide13} alt='' className='main-image'/>
-                    </Fade>
-                  </div>
-                </Zoom>
-                <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide13Left} alt=''/>
-                  </div>
-                </JackInTheBox>
-                <Fade>
-                  <div className='slide-right-img'>
-                    <img src={slide13Right} alt='' />
-                  </div>
-                </Fade>
-                <Bounce>
-                  <div className='link link-slide8'>
-                    <NavLink  to={'/'} target="_blank" rel="nofollow">Web link</NavLink>
-                  </div>
-                </Bounce>
-              </div>
-            </div> */}
-
             {/* icd10charts  */}
             <div className="screen-container">
               <div className="web-slide slide14">
@@ -550,11 +491,6 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                {/* <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide14Left} alt=''/>
-                  </div>
-                </JackInTheBox> */}
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide14Right} alt="" />
@@ -678,14 +614,6 @@ function Webdesign() {
           </div>
         </div>
       </div>
-
-      {/* <Reveal effect="slide-in-right">
-                  <div className='slide1_content_background'>
-                    <h2>The Auto Parts Shop</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled but also the leap</p>
-                    <NavLink className="slide_link slide1_link" to="/"></NavLink>
-                  </div>
-                </Reveal> */}
       <ScrollTop />
     </>
   );

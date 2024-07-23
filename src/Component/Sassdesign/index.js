@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { JackInTheBox, Fade, Bounce, Zoom } from "react-awesome-reveal";
 
@@ -19,6 +18,12 @@ import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 
 function Sassdesign() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Heading title="Sass Design" type="colored1" />

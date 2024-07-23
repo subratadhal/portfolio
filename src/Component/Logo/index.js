@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { logoData } from "../../data/logo";
 import ScrollTop from "../ScrollTop";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 import Heading from "../Heading";
 
 function Logo() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Heading title="Logo" type="colored1" />
