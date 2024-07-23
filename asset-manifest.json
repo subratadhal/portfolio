@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2121cf13.css",
-    "main.js": "/portfolio/static/js/main.cbb2a0d2.js",
+    "main.js": "/portfolio/static/js/main.349c3933.js",
     "static/js/453.0e004c73.chunk.js": "/portfolio/static/js/453.0e004c73.chunk.js",
     "static/media/ds3.png": "/portfolio/static/media/ds3.e78f32d6b4f54b86f2a2.png",
     "static/media/ChitChat.png": "/portfolio/static/media/ChitChat.3292e6f6ab194462b7cf.png",
@@ -30,7 +30,6 @@
     "static/media/slide6-right-bottom.svg": "/portfolio/static/media/slide6-right-bottom.f33e86871d17ba7648d47d9f42e759fa.svg",
     "static/media/csr.png": "/portfolio/static/media/csr.91194f563c581075e446.png",
     "static/media/arbor.png": "/portfolio/static/media/arbor.a14e05f2e9370095f424.png",
-    "static/media/case-study.svg": "/portfolio/static/media/case-study.915f2aa8b72bff9618591d28dd982a8f.svg",
     "static/media/techtinder.png": "/portfolio/static/media/techtinder.11aed3fbdd375e24b7d8.png",
     "static/media/slide12-left-bottom.png": "/portfolio/static/media/slide12-left-bottom.130302983280b0518a8d.png",
     "static/media/icd.png": "/portfolio/static/media/icd.3441c6c7a47397ae21d4.png",
@@ -84,11 +83,11 @@
     "static/media/v.svg": "/portfolio/static/media/v.298acdf80fcb76cace5c.svg",
     "static/media/y.svg": "/portfolio/static/media/y.9b3c956b1de3f5111ed8.svg",
     "main.2121cf13.css.map": "/portfolio/static/css/main.2121cf13.css.map",
-    "main.cbb2a0d2.js.map": "/portfolio/static/js/main.cbb2a0d2.js.map",
+    "main.349c3933.js.map": "/portfolio/static/js/main.349c3933.js.map",
     "453.0e004c73.chunk.js.map": "/portfolio/static/js/453.0e004c73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2121cf13.css",
-    "static/js/main.cbb2a0d2.js"
+    "static/js/main.349c3933.js"
   ]
 }
