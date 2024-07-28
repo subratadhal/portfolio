@@ -212,10 +212,10 @@ function Casestudydetails(props) {
                 <p className="section-paragraph">{item?.keyTakeAwayContent}</p>
                 <div className="container-fluid">
                   <div className="row">
-                    {item?.keyTakeAway?.map((data, key) => {
+                    {item?.keyTakeAway?.map((data, index) => {
                       return (
-                        <div className="col-md-6">
-                          <div className="key-take-away" key={key}>
+                        <div className="col-md-6" key={index}>
+                          <div className="key-take-away">
                             <div
                               className="kta-number"
                               style={{
@@ -223,7 +223,7 @@ function Casestudydetails(props) {
                                 color: item?.color?.primaryText,
                               }}
                             >
-                              0{key + 1}
+                              0{index + 1}
                             </div>
                             <div
                               className="kta-text"
@@ -352,6 +352,7 @@ function Casestudydetails(props) {
                     {item?.appImg?.map((data, key) => {
                       return (
                         <img
+                          key={key}
                           src={`${process.env.PUBLIC_URL}/images/casestudy/${data}`}
                           alt=""
                         />

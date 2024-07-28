@@ -26,6 +26,7 @@ import slide5Left from "../../assets/images/app/svg/slide5-left-bottom.svg";
 
 import slide6 from "../../assets/images/app/FLBook.png";
 import slide6Right from "../../assets/images/app/svg/slide6-right-bottom.svg";
+import slide6Left from "../../assets/images/app/svg/slide6-left-bottom.svg";
 
 import slide7 from "../../assets/images/app/banner-beenow.png";
 import slide7Right from "../../assets/images/app/svg/slide7-right-bottom.svg";
@@ -34,6 +35,11 @@ import slide7Left from "../../assets/images/app/svg/slide7-left-bottom.svg";
 import slide8 from "../../assets/images/app/banner-quickeats.png";
 import slide8Right from "../../assets/images/app/svg/slide8-right-bottom.svg";
 import slide8Left from "../../assets/images/app/svg/slide8-left-bottom.svg";
+
+import slide9 from "../../assets/images/app/banner-stepco.png";
+import slide9Right from "../../assets/images/app/svg/slide9-right-bottom.svg";
+import slide9Left from "../../assets/images/app/svg/slide9-left-bottom.svg";
+
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 
@@ -298,11 +304,11 @@ function Appportfolio() {
                     </Fade>
                   </div>
                 </Zoom>
-                {/* <Fade>
-                  <div className='slide-left-img'>
-                    <img src={slide5Left} alt=''/>
+                <Fade>
+                  <div className="slide-left-img">
+                    <img src={slide6Left} alt="" />
                   </div>
-                </Fade> */}
+                </Fade>
                 <JackInTheBox>
                   <div className="slide-right-img">
                     <img src={slide6Right} alt="" />
@@ -311,7 +317,40 @@ function Appportfolio() {
                 <Bounce>
                   <div className="link link-slide6">
                     <NavLink
-                      to={"https://shorturl.at/h4c6f"}
+                      to={"https://shorturl.at/MyxQ5"}
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype link
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+            {/* Stepco */}
+            <div className="screen-container">
+              <div className="slide slide9">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide9} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Fade>
+                  <div className="slide-left-img">
+                    <img src={slide9Left} alt="" />
+                  </div>
+                </Fade>
+                <JackInTheBox>
+                  <div className="slide-right-img">
+                    <img src={slide9Right} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Bounce>
+                  <div className="link link-slide6">
+                    <NavLink
+                      to={"https://shorturl.at/OEtet"}
                       target="_blank"
                       rel="nofollow"
                     >
