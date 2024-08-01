@@ -401,22 +401,24 @@ export const stockData = [
       "CSS3.svg",
     ],
     Decription:
-      "Chitchat is a dynamic and user-friendly dating app designed to help you find your ideal partner with ease. Whether you're looking for a serious relationship or a casual connection, Chitchat offers a platform where you can meet like-minded individuals. The app features an intuitive interface that makes navigation simple and enjoyable, allowing you to focus on getting to know potential matches. What sets Chitchat apart is its advanced matching algorithm, which takes your preferences and interests into account to suggest compatible profiles. With a diverse community of members, you're sure to find someone who shares your values and goals. The app also offers various communication tools, such as instant messaging and video chat, to help you build meaningful connections.",
+      "FlBook is the ultimate app for anyone looking to meticulously track every penny they spend. With FlBook, users can easily estimate their monthly budget and keep a detailed history of all their account transactions. This comprehensive record helps users gain insights into their actual expenses across various categories, enabling them to make informed decisions. Each category is thoughtfully organized, reflecting current day expenses to ensure accuracy and relevance. Moreover, FlBook provides a clear view of monthly savings, empowering users to achieve their financial goals. With its user-centric design and powerful features, FlBook is your trusted companion for smarter financial management.",
     ShortDecription:
-      "Chitchat is a user-friendly dating app with an advanced matching algorithm, diverse community, and communication tools like instant messaging and video chat to help you find your ideal partner easily.",
+      "FlBook is the app for meticulous spenders, offering monthly budget estimates and detailed transaction histories. Organized categories reflect daily expenses, helping users track and manage finances effectively. With FlBook, users can easily monitor their savings and make informed financial decisions.",
     ScopeContent:
-      "Implement a one-tap registration via social media or phone number. Validated with OTP for security. Develop intuitive search functionalities based on location and distance. Enable users to manage listings by favoriting or rejecting profiles for personalized matchmaking. Introduce comprehensive filters to ensure accurate search results. Provide detailed profile views including demographics, interests, and preferences for informed decisions. Enable seamless chat and video calls with favorite matches. Facilitate easy profile sharing to social media platforms. Design an intuitive gallery for users to manage and showcase photos effortlessly. Create a straight forward subscription system with clear plan listings. Offer quick payment options, including UPI and bank transfers, for user convenience and efficiency.",
-    ScopeUxDesign: "",
-    ScopeUiDesign: "",
+      "FlBook is designed to seamlessly align your expenses with your earnings, giving you a clear view of your monthly savings. With an intuitive UI and a user-friendly experience, setting up your profile requires minimal details. The app visualizes data hierarchically, making it easy to understand your income and expenses at a glance. FlBook tracks all UPI payments and transaction histories, organizing categories for clear, relational data. As a UI/UX designer, I've thoroughly researched user flows and data hierarchies, enabling us to build wireframes and prototypes in a short timeline. FlBook ensures a smooth, efficient financial management experience for every user.",
+    ScopeUxDesign:
+      "Imagine experiencing your finances as an extension of your soul. In FlBook, every expense is subtly visualized, with dynamic color changes to gently indicate money flowing out of your wallet. This feature provides a seamless and intuitive way to track your spending habits. As each transaction is made, the color shifts, giving you real-time feedback on your financial health. This thoughtful design element not only makes tracking expenses effortless but also creates a more emotionally engaging and mindful spending experience. By integrating these subtle visual cues, FlBook enhances user awareness and encourages more responsible financial behavior.",
+    ScopeUiDesign:
+      "Basic shapes and colors are directly connected to human-centric design. In FlBook, colors are used behaviorally: green for savings and orange for expenses. Horizontal forms enhance the understanding of input labeling, ensuring clarity. Each expense is tracked effortlessly, with easy-to-read reports available on a daily, weekly, and monthly basis. This intuitive design approach ensures that users can quickly grasp their financial status and make informed decisions. The thoughtful use of color and shape not only aids in comprehension but also creates a visually appealing and engaging user experience.",
     ScopeUiDevelopment:
-      "We segment the UI into autonomous, reusable elements to construct features and integrate diverse components within the system.",
+      "subrata We segment the UI into autonomous, reusable elements to construct features and integrate diverse components within the system.",
     ProjectGoal:
-      "Design a straightforward and logical navigation flow that allows users to easily access all features without confusion. Establish a clear information hierarchy with well-organized sitemaps to ensure users can quickly find what they need. Develop a cohesive visual style, including a harmonious color palette, clean typography, and consistent iconography, to create a visually pleasing interface. Ensure that the app’s design is modern, attractive, and aligns with the brand identity, making it appealing to the target demographic.  Optimize the app for various devices and screen sizes, ensuring a smooth experience on both iOS and Android platforms.  Implement interactive elements and animations that provide feedback and enhance the user experience without causing delays or disruptions. Design the app to be accessible to users with disabilities by following WCAG (Web Content Accessibility Guidelines) standards. Ensure the app accommodates a diverse user base, with features that cater to different needs and preferences.",
+      "Create a straightforward and logical navigation flow that allows users to access all features effortlessly. Establish a clear information hierarchy with well-organized sitemaps so users can quickly find what they need. Develop a cohesive visual style featuring a harmonious color palette, clean typography, and consistent iconography to create a visually appealing interface. Ensure the app’s design is modern, attractive, and aligns with the brand identity, making it appealing to the target demographic. Optimize the app for various devices and screen sizes, ensuring a seamless experience on both iOS and Android platforms. Integrate interactive elements and animations that provide feedback and enhance the user experience without causing delays or disruptions. Ensure the app accommodates a diverse user base, with features that cater to different needs and preferences.",
     projectGoalUl: [
-      "Spend Categorizations",
-      "Expense Tracking",
-      "----------",
-      "Spend Analysis",
+      "Clear navigation flow",
+      "Well-organized sitemaps",
+      "Cohesive visual style",
+      "Optimized for devices",
     ],
     Research:
       "UX research for a dating app involves several essential steps to deeply understand user needs and behaviors. Firstly, conducting user interviews and surveys provides valuable insights into how potential users approach dating apps, their preferences, challenges they face, and their expectations from such platforms. Secondly, analyzing competitor apps helps in identifying what works well and where there are opportunities for improvement or differentiation. This involves studying user reviews and ratings to grasp user satisfaction levels and pain points. Thirdly, creating detailed user personas is crucial, as they represent different segments of the target audience based on demographics, behaviors, motivations, and goals. These personas guide the design and development process to ensure alignment with user needs. Additionally, mapping out the user journey from app discovery to engagement and potential conversion helps in understanding key touchpoints, emotions, and pain points throughout the user experience. Usability testing with prototypes allows for observing how users interact with the app, providing insights into navigation, feature usability, content clarity, and overall user satisfaction.",
@@ -427,12 +429,12 @@ export const stockData = [
       "Smooth User Journey",
     ],
     UserFlow:
-      "ChitChat provides a secure platform for individuals aged 18 and above to connect and manage their dating experiences. With intuitive user navigation and simplified user flows, it ensures easy access to meet users needs seamlessly..",
+      "FlBook provides a secure platform for individuals aged 18 and above to connect and manage their dating experiences. With intuitive user navigation and simplified user flows, it ensures easy access to meet users needs seamlessly..",
     UserFlowImage: "flbook/userflow.png",
     keyTakeAwayContent:
       "I addressed the intended audience with age range was 18+ to 45.",
     ExecutionContent:
-      "Execute AiPrivacy app with focus on intuitive UI, seamless navigation, secure transactions, and efficient dashboard for optimal user satisfaction and market success.",
+      "Execute FlBook app with focus on intuitive UI, seamless navigation, secure transactions, and efficient dashboard for optimal user satisfaction and market success.",
     slug: "flbook",
     nextlink: "Ai_privacy",
     prevlink: "graftichik",
@@ -495,33 +497,35 @@ export const stockData = [
       "CSS3.svg",
     ],
     Decription:
-      "Chitchat is a dynamic and user-friendly dating app designed to help you find your ideal partner with ease. Whether you're looking for a serious relationship or a casual connection, Chitchat offers a platform where you can meet like-minded individuals. The app features an intuitive interface that makes navigation simple and enjoyable, allowing you to focus on getting to know potential matches. What sets Chitchat apart is its advanced matching algorithm, which takes your preferences and interests into account to suggest compatible profiles. With a diverse community of members, you're sure to find someone who shares your values and goals. The app also offers various communication tools, such as instant messaging and video chat, to help you build meaningful connections.",
+      "Stepco is an essential platform for health-conscious individuals who participate in health events. In today's world, online event management apps are incredibly popular, and Stepco stands out by offering a wide range of events in fitness, yoga, dance, and martial arts. Stepco app features a comprehensive listing of all upcoming events, making it easy for users to stay informed and plan their schedules. Booking an appointment to attend an event is quick and effortless, ensuring a seamless experience in managing all users health-related activities.",
     ShortDecription:
-      "Chitchat is a user-friendly dating app with an advanced matching algorithm, diverse community, and communication tools like instant messaging and video chat to help you find your ideal partner easily.",
+      "Stepco connects health-conscious individuals to popular online events in fitness, yoga, dance, and martial arts. Easily browse upcoming events and quickly book your spot for a seamless experience.",
     ScopeContent:
-      "Implement a one-tap registration via social media or phone number. Validated with OTP for security. Develop intuitive search functionalities based on location and distance. Enable users to manage listings by favoriting or rejecting profiles for personalized matchmaking. Introduce comprehensive filters to ensure accurate search results. Provide detailed profile views including demographics, interests, and preferences for informed decisions. Enable seamless chat and video calls with favorite matches. Facilitate easy profile sharing to social media platforms. Design an intuitive gallery for users to manage and showcase photos effortlessly. Create a straight forward subscription system with clear plan listings. Offer quick payment options, including UPI and bank transfers, for user convenience and efficiency.",
-    ScopeUxDesign: "",
-    ScopeUiDesign: "",
+      "Stepco is designed with user needs in mind. My user-centric UI/UX offers an intuitive, user-friendly, and easily navigable layout. With a multi-layered information architecture, every step in this app is streamlined for quick access and efficiency. Prioritize empathy to create a meaningful connection with app users, making Stepco an essential part of user health journey. UX design process ensures rapid completion while delivering a seamless experience. As UI/UX designer, I carefully choose colors, typography, symbols, and layout to enhance usability and aesthetics, providing users with an app that truly resonates.",
+    ScopeUxDesign:
+      "Stepco is crafted with a strong focus on user needs, featuring a design that prioritizes ease of use and navigability. The app employs a multi-layered information architecture to ensure that each interaction is streamlined for quick and efficient access. By emphasizing empathy in the design process, Stepco builds a meaningful connection with its users, making it a vital tool in their health journey. The UX design process is dedicated to delivering a smooth and engaging experience, enabling rapid development while maintaining a high standard of usability.",
+    ScopeUiDesign:
+      "In designing Stepco, I focus on creating a visually compelling and functional interface that enhances the overall user experience. This involves meticulous selection of colors, typography, symbols, and layout to ensure both aesthetic appeal and usability. The goal is to harmonize visual elements with user needs, resulting in an app that not only looks attractive but also facilitates intuitive interaction. By integrating thoughtful design choices, Stepco provides users with a polished and resonant app experience that aligns with their health goals.",
     ScopeUiDevelopment:
       "We segment the UI into autonomous, reusable elements to construct features and integrate diverse components within the system.",
     ProjectGoal:
-      "Design a straightforward and logical navigation flow that allows users to easily access all features without confusion. Establish a clear information hierarchy with well-organized sitemaps to ensure users can quickly find what they need. Develop a cohesive visual style, including a harmonious color palette, clean typography, and consistent iconography, to create a visually pleasing interface. Ensure that the app’s design is modern, attractive, and aligns with the brand identity, making it appealing to the target demographic.  Optimize the app for various devices and screen sizes, ensuring a smooth experience on both iOS and Android platforms.  Implement interactive elements and animations that provide feedback and enhance the user experience without causing delays or disruptions. Design the app to be accessible to users with disabilities by following WCAG (Web Content Accessibility Guidelines) standards. Ensure the app accommodates a diverse user base, with features that cater to different needs and preferences.",
+      "Design a straightforward and logical navigation flow that allows users to easily access all features without confusion. Establish a clear information hierarchy with well-organized sitemaps to ensure users can quickly find what they need. Develop a cohesive visual style, including a harmonious color palette, clean typography, and consistent iconography, to create a visually pleasing interface. Ensure that the app’s design is modern, attractive, and aligns with the brand identity, making it appealing to the target demographic.  Optimize the app for various devices and screen sizes, ensuring a smooth experience on both iOS and Android platforms.  Implement interactive elements and animations that provide feedback and enhance the user experience without causing delays or disruptions. Ensure the app accommodates a diverse user base, with features that cater to different needs and preferences.",
     projectGoalUl: [
-      "Spend Categorizations",
-      "Expense Tracking",
-      "----------",
-      "Spend Analysis",
+      "User-centered, intuitive design",
+      "Comprehensive user research",
+      "Detailed user personas",
+      "Multi-layered content structure",
     ],
     Research:
-      "UX research for a dating app involves several essential steps to deeply understand user needs and behaviors. Firstly, conducting user interviews and surveys provides valuable insights into how potential users approach dating apps, their preferences, challenges they face, and their expectations from such platforms. Secondly, analyzing competitor apps helps in identifying what works well and where there are opportunities for improvement or differentiation. This involves studying user reviews and ratings to grasp user satisfaction levels and pain points. Thirdly, creating detailed user personas is crucial, as they represent different segments of the target audience based on demographics, behaviors, motivations, and goals. These personas guide the design and development process to ensure alignment with user needs. Additionally, mapping out the user journey from app discovery to engagement and potential conversion helps in understanding key touchpoints, emotions, and pain points throughout the user experience. Usability testing with prototypes allows for observing how users interact with the app, providing insights into navigation, feature usability, content clarity, and overall user satisfaction.",
+      "UX research for a fitness, yoga, dance, and martial arts event appointment app involves several essential steps to deeply understand user needs and behaviors. Firstly, conducting user interviews and surveys provides valuable insights into how potential users approach booking events, their preferences, challenges they face, and their expectations from such platforms. Secondly, analyzing competitor apps helps in identifying what works well and where there are opportunities for improvement or differentiation. This involves studying user reviews and ratings to grasp user satisfaction levels and pain points. Thirdly, creating detailed user personas is crucial, as they represent different segments of the target audience based on demographics, behaviors, motivations, and goals. These personas guide the design and development process to ensure alignment with user needs. Additionally, mapping out the user journey from app discovery to engagement and potential conversion helps in understanding key touchpoints, emotions, and pain points throughout the user experience. Usability testing with prototypes allows for observing how users interact with the app, providing insights into navigation, feature usability, content clarity, and overall user satisfaction.",
     keyTakeAway: [
-      "Varied User Base",
-      "Spotlight Key Features",
-      "Clear User Onboarding",
-      "Smooth User Journey",
+      "User interviews and surveys",
+      "Competitor app analysis",
+      "Detailed user personas",
+      "Usability testing with prototypes",
     ],
     UserFlow:
-      "ChitChat provides a secure platform for individuals aged 18 and above to connect and manage their dating experiences. With intuitive user navigation and simplified user flows, it ensures easy access to meet users needs seamlessly..",
+      "Stepco offers a secure platform for individuals aged 18 and older to connect and manage their dating experiences. Featuring intuitive navigation and streamlined user flows, it ensures seamless and easy access to meet user needs.",
     UserFlowImage: "stepco/userflow.png",
     keyTakeAwayContent:
       "I addressed the intended audience with age range was 18+ to 45.",
