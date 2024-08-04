@@ -2,7 +2,7 @@
   "name": "Portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://subratadhal.github.io/portfolio",
+  "homepage": "subratashal.netlify.com",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@testing-library/jest-dom": "^5.17.0",
@@ -30,7 +30,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
