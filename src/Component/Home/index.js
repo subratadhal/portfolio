@@ -270,7 +270,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle2}
                   onMouseLeave={handleMouseMoveStyle2Reset}
                   style={{ backgroundSize: `${percentageStyle2}%` }}
-                  to={"/portfolio"}
+                  to={"/portfolio/banners"}
                 >
                   Banners
                 </NavLink>

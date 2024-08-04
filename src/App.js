@@ -20,6 +20,7 @@ import Casestudydetails from "./Component/Casestudydetails";
 import Resume from "./Component/Resume";
 import Contact from "./Component/Contact";
 import Logo from "./Component/Logo";
+import Banners from "./Component/Banners";
 import { JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
 import Sassdesign from "./Component/Sassdesign";
 import HomeLogo from "../src/assets/images/home.svg";
@@ -368,6 +369,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/portfolio" replace />} />
           <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/banners" element={<Banners />} />
           <Route path="/portfolio/app-design" element={<Appportfolio />} />
           <Route path="/portfolio/web-design" element={<Webdesign />} />
           <Route path="/portfolio/sass-design" element={<Sassdesign />} />

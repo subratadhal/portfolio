@@ -328,6 +328,19 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            position: relative;
+            &:before{               
+                height: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: '';
+                // background: #f00;
+                background: linear-gradient(to bottom, #000000 0%,#ffffff25 100%);               
+                transition: all linear 1s;
+            }           
+                   
             .menu-box{
                 display: flex;
                 flex-direction: column;
@@ -352,6 +365,25 @@ main{
                     }
                 }
             }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4){
+                &:before{ opacity: 0;}
+                &:hover{     
+                    &:before{
+                        opacity: 1;
+                        height: 10%;
+                        transition: all linear 1s;
+                    }
+                     .menu-box{
+                        .menu-heading{
+                            animation: circle-shadow 5s ease-in-out infinite;
+                            
+                        }
+                     }
+                }
+            }   
         }
     }
     .home-menu-button{
@@ -427,6 +459,31 @@ main{
         }
     }
 }
+@keyframes circle-shadow {
+    0% {
+        text-shadow: 10px 10px #ffffff10,  0 0 1em white,
+    0 0 0.2em white;;
+    }
+    25% {
+        text-shadow: -10px 5px #ffffff10,  0 0 1em white,
+    0 0 0.2em white;;
+    }
+    50% {
+        text-shadow: -10px -10px #ffffff10,  0 0 1em white,
+    0 0 0.2em white;;
+    }
+    75% {
+        text-shadow: 5px -10px #ffffff10,  0 0 1em white,
+    0 0 0.2em white;;
+    }
+    100% {
+        text-shadow: 10px 10px #ffffff10,  0 0 1em white,
+    0 0 0.2em white;;
+    }
+
+   
+}
+
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
@@ -481,11 +538,12 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 99;
    a{
     display: block;
     font-size: 1.8vw;
     color: #fff;
-    text-decoration: none;    
+    text-decoration: none;        
    }
 }
 .header-panel {
@@ -3176,12 +3234,50 @@ LOGO
         color: #222;
         margin: 24px 0;
     }
-    .image-section{
+    .image-section{       
         @media (max-width:767px){
             img{ width: 100%;}                
         }
     }
 }
+
+/********************* 
+BANNERS
+*********************/
+
+.banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: #222;
+        margin: 24px 0;
+    }
+    .image-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         img{
+            width: 50%;
+            margin-bottom: 50px;
+            -webkit-box-shadow: 0px 10px 10px 0px rgba(221,221,221,1);
+            -moz-box-shadow: 0px 10px 10px 0px rgba(221,221,221,1);
+            box-shadow: 0px 10px 10px 0px rgba(221,221,221,1);
+        }       
+        text-align: center;
+        @media (max-width:767px){
+            img{ width: 100%;}                
+        }
+    }
+}
+
+
 
 
 /********************* 
