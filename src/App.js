@@ -367,7 +367,7 @@ function App() {
       )}
       <main>
         <Routes>
-          <Route path="/" element={<Navigate to="/portfolio" replace />} />
+          <Route path="/" element={<Navigate to="/portfolio" />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/banners" element={<Banners />} />
           <Route path="/portfolio/app-design" element={<Appportfolio />} />
@@ -382,6 +382,7 @@ function App() {
             element={<Casestudydetails />}
           />
           <Route path="/portfolio/logo" element={<Logo />} />
+          <Route path="*" element={<Navigate to="/portfolio" />} />
         </Routes>
       </main>
     </Router>
