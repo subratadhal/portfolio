@@ -12,11 +12,11 @@ function About() {
     });
   }, []);
   const linkData = {
-    prevLink: "/portfolio/resume",
+    prevLink: "/resume",
     prevTitle: "Resume",
     prevContent: "View resume and download resume from google drive",
-    homeLink: "/portfolio",
-    nextLink: "/portfolio/Contact",
+    homeLink: "",
+    nextLink: "/Contact",
     nextTitle: "Contact",
     nextContent: "See contact information for business",
   };

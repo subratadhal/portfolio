@@ -139,41 +139,37 @@ function Home() {
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/case-study"}>Case Study</NavLink>
+                      <NavLink to={"/case-study"}>Case Study</NavLink>
                     </span>
                   </li>
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/app-design"}>App Design</NavLink>
+                      <NavLink to={"/app-design"}>App Design</NavLink>
                     </span>
                   </li>
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/web-design"}>Web Design</NavLink>
+                      <NavLink to={"/web-design"}>Web Design</NavLink>
                     </span>
                   </li>
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/sass-design"}>
-                        SASS Design
-                      </NavLink>
+                      <NavLink to={"/sass-design"}>SASS Design</NavLink>
                     </span>
                   </li>
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/logo"}>Logo Design</NavLink>
+                      <NavLink to={"/logo"}>Logo Design</NavLink>
                     </span>
                   </li>
                   <li>
                     <span className="line"></span>
                     <span className="circle">
-                      <NavLink to={"/portfolio/creatives"}>
-                        Graphics Design
-                      </NavLink>
+                      <NavLink to={"/creatives"}>Graphics Design</NavLink>
                     </span>
                   </li>
                 </ul>
@@ -260,7 +256,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle1}
                   onMouseLeave={handleMouseMoveStyle1Reset}
                   style={{ backgroundSize: `${percentageStyle1}%` }}
-                  to={"/portfolio/resume"}
+                  to={"/resume"}
                 >
                   Resume
                 </NavLink>
@@ -270,7 +266,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle2}
                   onMouseLeave={handleMouseMoveStyle2Reset}
                   style={{ backgroundSize: `${percentageStyle2}%` }}
-                  to={"/portfolio/banners"}
+                  to={"/banners"}
                 >
                   Banners
                 </NavLink>
@@ -280,7 +276,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle3}
                   onMouseLeave={handleMouseMoveStyle3Reset}
                   style={{ backgroundSize: `${percentageStyle3}%` }}
-                  to={"/portfolio/web-design"}
+                  to={"/web-design"}
                 >
                   Web Design
                 </NavLink>
@@ -290,7 +286,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle4}
                   onMouseLeave={handleMouseMoveStyle4Reset}
                   style={{ backgroundSize: `${percentageStyle4}%` }}
-                  to={"/portfolio/case-study"}
+                  to={"/case-study"}
                 >
                   Case Study
                 </NavLink>
@@ -300,7 +296,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle5}
                   onMouseLeave={handleMouseMoveStyle5Reset}
                   style={{ backgroundSize: `${percentageStyle5}%` }}
-                  to={"/portfolio/app-design"}
+                  to={"/app-design"}
                 >
                   App Design
                 </NavLink>
@@ -310,7 +306,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle7}
                   onMouseLeave={handleMouseMoveStyle7Reset}
                   style={{ backgroundSize: `${percentageStyle7}%` }}
-                  to={"/portfolio"}
+                  to={""}
                 >
                   Illustration
                 </NavLink>
@@ -320,7 +316,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle9}
                   onMouseLeave={handleMouseMoveStyle9Reset}
                   style={{ backgroundSize: `${percentageStyle9}%` }}
-                  to={"/portfolio"}
+                  to={""}
                 >
                   Creatives
                 </NavLink>
@@ -330,7 +326,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle8}
                   onMouseLeave={handleMouseMoveStyle8Reset}
                   style={{ backgroundSize: `${percentageStyle8}%` }}
-                  to={"/portfolio/logo"}
+                  to={"/logo"}
                 >
                   Logo
                 </NavLink>
@@ -340,7 +336,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle10}
                   onMouseLeave={handleMouseMoveStyle10Reset}
                   style={{ backgroundSize: `${percentageStyle10}%` }}
-                  to={"/portfolio/about"}
+                  to={"/about"}
                 >
                   About
                 </NavLink>
@@ -350,7 +346,7 @@ function Home() {
                   onMouseMove={handleMouseMoveStyle6}
                   onMouseLeave={handleMouseMoveStyle6Reset}
                   style={{ backgroundSize: `${percentageStyle6}%` }}
-                  to={"/portfolio/contact"}
+                  to={"/contact"}
                 >
                   Contact
                 </NavLink>

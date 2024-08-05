@@ -30,11 +30,11 @@ function Contact() {
     });
   }, []);
   const linkData = {
-    prevLink: "/portfolio/about",
+    prevLink: "/about",
     prevTitle: "About",
     prevContent: "View resume and download resume from google drive",
-    homeLink: "/portfolio",
-    nextLink: "/portfolio/Resume",
+    homeLink: "",
+    nextLink: "/Resume",
     nextTitle: "Resume",
     nextContent: "View resume and download resume from google drive",
   };

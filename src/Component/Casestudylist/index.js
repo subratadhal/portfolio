@@ -24,7 +24,7 @@ function Casestudylist() {
                 return (
                   <div className="list-box" key={key}>
                     <NavLink
-                      to={`/portfolio/case-study-details/${data?.slug}`}
+                      to={`/case-study-details/${data?.slug}`}
                       rel="nofollow"
                     >
                       <div className="image-section">

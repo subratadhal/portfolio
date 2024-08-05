@@ -30,7 +30,7 @@ function Menu({ onMenuChildComponentClick }) {
 
   return (
     <div>
-      {location.pathname !== "/portfolio" && (
+      {location.pathname !== "" && (
         <div
           className="menu-button"
           role="button"
@@ -80,7 +80,7 @@ function App() {
               <>
                 <div className="home-icon">
                   <Bounce>
-                    <NavLink to="/portfolio" onClick={() => menuOnClick()}>
+                    <NavLink to="" onClick={() => menuOnClick()}>
                       <img src={HomeLogo} alt="" />
                     </NavLink>
                   </Bounce>
@@ -94,7 +94,7 @@ function App() {
                       <div className="nav-link">
                         <Bounce>
                           <NavLink
-                            to="/portfolio/app-design"
+                            to="/app-design"
                             onClick={() => menuOnClick()}
                           >
                             App
@@ -104,7 +104,7 @@ function App() {
                       <div className="nav-link">
                         <Bounce>
                           <NavLink
-                            to="/portfolio/web-design"
+                            to="/web-design"
                             onClick={() => menuOnClick()}
                           >
                             Web
@@ -114,7 +114,7 @@ function App() {
                       <div className="nav-link">
                         <Bounce>
                           <NavLink
-                            to="/portfolio/sass-design"
+                            to="/sass-design"
                             onClick={() => menuOnClick()}
                           >
                             Sass
@@ -131,7 +131,7 @@ function App() {
                       <div className="nav-link">
                         <Bounce>
                           <NavLink
-                            to="/portfolio/case-study"
+                            to="/case-study"
                             onClick={() => menuOnClick()}
                           >
                             App & Web
@@ -147,10 +147,7 @@ function App() {
                       </div>
                       <div className="nav-link">
                         <Bounce>
-                          <NavLink
-                            to="/portfolio/logo"
-                            onClick={() => menuOnClick()}
-                          >
+                          <NavLink to="/logo" onClick={() => menuOnClick()}>
                             Logo
                           </NavLink>
                         </Bounce>
@@ -158,7 +155,7 @@ function App() {
                       <div className="nav-link">
                         <Bounce>
                           <NavLink
-                            to="/portfolio/creatives"
+                            to="/creatives"
                             onClick={() => menuOnClick()}
                           >
                             Creatives
@@ -167,10 +164,7 @@ function App() {
                       </div>
                       <div className="nav-link">
                         <Bounce>
-                          <NavLink
-                            to="/portfolio/banners"
-                            onClick={() => menuOnClick()}
-                          >
+                          <NavLink to="/banners" onClick={() => menuOnClick()}>
                             Banners
                           </NavLink>
                         </Bounce>
@@ -184,30 +178,21 @@ function App() {
                       </div>
                       <div className="nav-link">
                         <Bounce>
-                          <NavLink
-                            to="/portfolio/resume"
-                            onClick={() => menuOnClick()}
-                          >
+                          <NavLink to="/resume" onClick={() => menuOnClick()}>
                             Resume
                           </NavLink>
                         </Bounce>
                       </div>
                       <div className="nav-link">
                         <Bounce>
-                          <NavLink
-                            to="/portfolio/about"
-                            onClick={() => menuOnClick()}
-                          >
+                          <NavLink to="/about" onClick={() => menuOnClick()}>
                             About
                           </NavLink>
                         </Bounce>
                       </div>
                       <div className="nav-link">
                         <Bounce>
-                          <NavLink
-                            to="/portfolio/contact"
-                            onClick={() => menuOnClick()}
-                          >
+                          <NavLink to="/contact" onClick={() => menuOnClick()}>
                             Contact
                           </NavLink>
                         </Bounce>
@@ -223,7 +208,7 @@ function App() {
         <header className={menu ? "menu-profile open" : "menu-profile"}>
           <div className="menu-close">
             <Slide>
-              <NavLink to="/portfolio" onClick={() => menuOnClick()}>
+              <NavLink to="" onClick={() => menuOnClick()}>
                 {"<"} Home
               </NavLink>
             </Slide>
@@ -236,30 +221,21 @@ function App() {
                 </div>
                 <div className="nav-link">
                   <Bounce>
-                    <NavLink
-                      to="/portfolio/app-design"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/app-design" onClick={() => menuOnClick()}>
                       App
                     </NavLink>
                   </Bounce>
                 </div>
                 <div className="nav-link">
                   <Bounce>
-                    <NavLink
-                      to="/portfolio/web-design"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/web-design" onClick={() => menuOnClick()}>
                       Web
                     </NavLink>
                   </Bounce>
                 </div>
                 <div className="nav-link">
                   <Bounce>
-                    <NavLink
-                      to="/portfolio/sass-design"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/sass-design" onClick={() => menuOnClick()}>
                       Sass
                     </NavLink>
                   </Bounce>
@@ -274,10 +250,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/case-study"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/case-study" onClick={() => menuOnClick()}>
                       App & Web
                     </NavLink>
                   </Bounce>
@@ -292,7 +265,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink to="/portfolio/logo" onClick={() => menuOnClick()}>
+                    <NavLink to="/logo" onClick={() => menuOnClick()}>
                       Logo
                     </NavLink>
                   </Bounce>
@@ -300,10 +273,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/creatives"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/creatives" onClick={() => menuOnClick()}>
                       Creatives
                     </NavLink>
                   </Bounce>
@@ -311,10 +281,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/banners"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/banners" onClick={() => menuOnClick()}>
                       Banners
                     </NavLink>
                   </Bounce>
@@ -329,10 +296,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/resume"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/resume" onClick={() => menuOnClick()}>
                       Resume
                     </NavLink>
                   </Bounce>
@@ -340,10 +304,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/about"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/about" onClick={() => menuOnClick()}>
                       About
                     </NavLink>
                   </Bounce>
@@ -351,10 +312,7 @@ function App() {
                 <div className="nav-link">
                   <Bounce>
                     {" "}
-                    <NavLink
-                      to="/portfolio/contact"
-                      onClick={() => menuOnClick()}
-                    >
+                    <NavLink to="/contact" onClick={() => menuOnClick()}>
                       Contact
                     </NavLink>
                   </Bounce>
@@ -367,22 +325,21 @@ function App() {
       )}
       <main>
         <Routes>
-          <Route path="/" element={<Navigate to="/portfolio" />} />
-          <Route path="/portfolio" element={<Home />} />
-          <Route path="/portfolio/banners" element={<Banners />} />
-          <Route path="/portfolio/app-design" element={<Appportfolio />} />
-          <Route path="/portfolio/web-design" element={<Webdesign />} />
-          <Route path="/portfolio/sass-design" element={<Sassdesign />} />
-          <Route path="/portfolio/resume" element={<Resume />} />
-          <Route path="/portfolio/about" element={<About />} />
-          <Route path="/portfolio/contact" element={<Contact />} />
-          <Route path="/portfolio/case-study" element={<Casestudylist />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/banners" element={<Banners />} />
+          <Route path="/app-design" element={<Appportfolio />} />
+          <Route path="/web-design" element={<Webdesign />} />
+          <Route path="/sass-design" element={<Sassdesign />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/case-study" element={<Casestudylist />} />
           <Route
-            path="/portfolio/case-study-details/:id"
+            path="/case-study-details/:id"
             element={<Casestudydetails />}
           />
-          <Route path="/portfolio/logo" element={<Logo />} />
-          <Route path="*" element={<Navigate to="/portfolio" />} />
+          <Route path="/logo" element={<Logo />} />
         </Routes>
       </main>
     </Router>

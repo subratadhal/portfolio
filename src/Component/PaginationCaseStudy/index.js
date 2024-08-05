@@ -34,7 +34,7 @@ function PaginationCaseStudy(props) {
             <div className="section-pagination">
               <div className="pagination-link">
                 <NavLink
-                  to={`/portfolio/case-study-details/${previousData?.slug}`}
+                  to={`/case-study-details/${previousData?.slug}`}
                   rel="nofollow"
                 >
                   <img
@@ -46,7 +46,7 @@ function PaginationCaseStudy(props) {
               </div>
 
               <NavLink
-                to={`/portfolio/case-study`}
+                to={`/case-study`}
                 rel="nofollow"
                 className="pagination-list"
               >
@@ -57,7 +57,7 @@ function PaginationCaseStudy(props) {
 
               <div className="pagination-link">
                 <NavLink
-                  to={`/portfolio/case-study-details/${nextData?.slug}`}
+                  to={`/case-study-details/${nextData?.slug}`}
                   rel="nofollow"
                 >
                   <img
