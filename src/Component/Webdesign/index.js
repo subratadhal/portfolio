@@ -66,6 +66,7 @@ import slide18Left from "../../assets/images/web/svg/slide18-left-bottom.png";
 
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
+import Contentoverlay from "./contentoverlay";
 
 function Webdesign() {
   useEffect(() => {
@@ -90,6 +91,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="arborfinancialgroup" />
                 <JackInTheBox direction="left">
                   <div className="slide-left-img">
                     <img src={slide1Left} alt="" />
@@ -123,6 +125,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="theautopartsshop" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide3Left} alt="" />
@@ -156,6 +159,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="trianz" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide4Left} alt="" />
@@ -189,6 +193,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="hajoona" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide5Left} alt="" />
@@ -222,6 +227,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="foreverliving" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide6Left} alt="" />
@@ -255,6 +261,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="infoskysolutions" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide7Left} alt="" />
@@ -288,6 +295,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="morethanjustparks" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide8Left} alt="" />
@@ -322,11 +330,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                {/* <JackInTheBox>
-                  <div className='slide-left-img'>
-                    <img src={slide9Left} alt=''/>
-                  </div>
-                </JackInTheBox> */}
+                <Contentoverlay site="ds3software" />
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide9Right} alt="" />
@@ -356,6 +360,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="techtinder" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide18Left} alt="" />
@@ -390,6 +395,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="speedtrader" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide10Left} alt="" />
@@ -424,6 +430,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="oralarchitect" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide11Left} alt="" />
@@ -458,6 +465,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="relianceprimary" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide12Left} alt="" />
@@ -491,6 +499,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="icd10charts" />
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide14Right} alt="" />
@@ -520,6 +529,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="chalotirth" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide15Left} alt="" />
@@ -554,6 +564,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="edrugsafety" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide16Left} alt="" />
@@ -588,6 +599,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="CSRPortal" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide17Left} alt="" />

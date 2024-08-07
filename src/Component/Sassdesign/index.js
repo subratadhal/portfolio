@@ -16,6 +16,7 @@ import slide2Left from "../../assets/images/sass/svg/slide2-left-bottom.png";
 
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
+import Contentoverlay from "../Webdesign/contentoverlay";
 
 function Sassdesign() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="eshopbox" />
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide0Right} alt="" />
@@ -73,6 +75,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="ack" />
                 <JackInTheBox direction="left">
                   <div className="slide-left-img">
                     <img src={slide1Left} alt="" />
@@ -106,6 +109,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
+                <Contentoverlay site="takeoff" />
                 <JackInTheBox direction="left">
                   <div className="slide-left-img">
                     <img src={slide2Left} alt="" />
