@@ -149,7 +149,7 @@ function Webdesign() {
                 </Bounce>
               </div>
             </div>
-            {/*https://www.trianz.com */}
+            {/*https://www.concierto.cloud */}
             <div className="screen-container">
               <div className="web-slide slide4">
                 <Zoom>
@@ -159,7 +159,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="trianz" />
+                <Contentoverlay site="conciertocloud" />
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide4Left} alt="" />
@@ -173,7 +173,7 @@ function Webdesign() {
                 <Bounce>
                   <div className="link">
                     <NavLink
-                      to={"https://www.trianz.com"}
+                      to={"https://www.concierto.cloud"}
                       target="_blank"
                       rel="nofollow"
                     >
@@ -261,7 +261,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="infoskysolutions" />
+                {/* <Contentoverlay site="infoskysolutions" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide7Left} alt="" />
@@ -295,7 +295,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="morethanjustparks" />
+                {/* <Contentoverlay site="morethanjustparks" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide8Left} alt="" />
@@ -330,7 +330,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="ds3software" />
+                {/* <Contentoverlay site="ds3software" /> */}
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide9Right} alt="" />
@@ -360,7 +360,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="techtinder" />
+                {/* <Contentoverlay site="techtinder" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide18Left} alt="" />
@@ -395,7 +395,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="speedtrader" />
+                {/* <Contentoverlay site="speedtrader" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide10Left} alt="" />
@@ -430,7 +430,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="oralarchitect" />
+                {/* <Contentoverlay site="oralarchitect" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide11Left} alt="" />
@@ -465,7 +465,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="relianceprimary" />
+                {/* <Contentoverlay site="relianceprimary" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide12Left} alt="" />
@@ -499,7 +499,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="icd10charts" />
+                {/* <Contentoverlay site="icd10charts" /> */}
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide14Right} alt="" />
@@ -529,7 +529,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="chalotirth" />
+                {/* <Contentoverlay site="chalotirth" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide15Left} alt="" />
@@ -564,7 +564,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="edrugsafety" />
+                {/* <Contentoverlay site="edrugsafety" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide16Left} alt="" />
@@ -599,7 +599,7 @@ function Webdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="CSRPortal" />
+                {/* <Contentoverlay site="CSRPortal" /> */}
                 <JackInTheBox>
                   <div className="slide-left-img">
                     <img src={slide17Left} alt="" />

@@ -41,7 +41,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="eshopbox" />
+                {/* <Contentoverlay site="eshopbox" /> */}
                 <Fade>
                   <div className="slide-right-img">
                     <img src={slide0Right} alt="" />
@@ -75,7 +75,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="ack" />
+                {/* <Contentoverlay site="ack" /> */}
                 <JackInTheBox direction="left">
                   <div className="slide-left-img">
                     <img src={slide1Left} alt="" />
@@ -109,7 +109,7 @@ function Sassdesign() {
                     </Fade>
                   </div>
                 </Zoom>
-                <Contentoverlay site="takeoff" />
+                {/* <Contentoverlay site="takeoff" /> */}
                 <JackInTheBox direction="left">
                   <div className="slide-left-img">
                     <img src={slide2Left} alt="" />
