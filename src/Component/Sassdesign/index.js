@@ -16,7 +16,7 @@ import slide2Left from "../../assets/images/sass/svg/slide2-left-bottom.png";
 
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
-import Contentoverlay from "../Webdesign/contentoverlay";
+//import Contentoverlay from "../Webdesign/contentoverlay";
 
 function Sassdesign() {
   useEffect(() => {
