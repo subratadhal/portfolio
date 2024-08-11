@@ -638,6 +638,9 @@ main{
                 }
             }            
         }
+        @media (max-width:1024px) {
+            display: none !important;
+        }
     }    
     .ui-role,
     .ux-role,
@@ -710,7 +713,7 @@ main{
     @media (max-width:1550px) and (min-width:1200px){
         width: 800px;
     }
-    @media (max-width:767px) {
+    @media (max-width:1199px) {
         width: 100%;
     }
     margin: 0 auto;
@@ -1307,7 +1310,7 @@ main{
     @media (max-width:1550px) and (min-width:1200px){
         width: 800px;
     }
-    @media (max-width:767px) {
+    @media (max-width:1199px) {
         width: 100%;
     }
     &:hover{
@@ -1940,7 +1943,7 @@ main{
     @media (max-width:1550px) and (min-width:1200px){
         width: 800px;
     }
-    @media (max-width:767px) {
+    @media (max-width:1199px) {
         width: 100%;
     }
     &:hover{
