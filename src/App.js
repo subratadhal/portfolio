@@ -190,13 +190,13 @@ function App() {
                           </NavLink>
                         </Bounce>
                       </div>
-                      {/* <div className="nav-link">
+                      <div className="nav-link">
                         <Bounce>
                           <NavLink to="/contact" onClick={() => menuOnClick()}>
                             Contact
                           </NavLink>
                         </Bounce>
-                      </div> */}
+                      </div>
                     </div>
                   </li>
                 </ul>

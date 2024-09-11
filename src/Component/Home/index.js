@@ -28,7 +28,7 @@ function Home() {
   const [percentageStyle3, setPercentageStyle3] = useState(0);
   const [percentageStyle4, setPercentageStyle4] = useState(0);
   const [percentageStyle5, setPercentageStyle5] = useState(0);
-  //const [percentageStyle6, setPercentageStyle6] = useState(0);
+  const [percentageStyle6, setPercentageStyle6] = useState(0);
   const [percentageStyle7, setPercentageStyle7] = useState(0);
   const [percentageStyle8, setPercentageStyle8] = useState(0);
   const [percentageStyle9, setPercentageStyle9] = useState(0);
@@ -79,15 +79,15 @@ function Home() {
   const handleMouseMoveStyle5Reset = () => {
     setPercentageStyle5(0);
   };
-  // const handleMouseMoveStyle6 = (e) => {
-  //   const divWidth = e.target.clientWidth;
-  //   const mouseX = e.nativeEvent.offsetX;
-  //   const mousePercentage = (mouseX / divWidth) * 100;
-  //   setPercentageStyle6(mousePercentage.toFixed(2));
-  // };
-  // const handleMouseMoveStyle6Reset = () => {
-  //   setPercentageStyle6(0);
-  // };
+  const handleMouseMoveStyle6 = (e) => {
+    const divWidth = e.target.clientWidth;
+    const mouseX = e.nativeEvent.offsetX;
+    const mousePercentage = (mouseX / divWidth) * 100;
+    setPercentageStyle6(mousePercentage.toFixed(2));
+  };
+  const handleMouseMoveStyle6Reset = () => {
+    setPercentageStyle6(0);
+  };
   const handleMouseMoveStyle7 = (e) => {
     const divWidth = e.target.clientWidth;
     const mouseX = e.nativeEvent.offsetX;
