@@ -341,7 +341,7 @@ function Home() {
                   About
                 </NavLink>
               </li>
-              {/* <li className="link-style-6">
+              <li className="link-style-6">
                 <NavLink
                   onMouseMove={handleMouseMoveStyle6}
                   onMouseLeave={handleMouseMoveStyle6Reset}
@@ -350,7 +350,7 @@ function Home() {
                 >
                   Contact
                 </NavLink>
-              </li> */}
+              </li>
             </ul>
             <div className="animation">
               <ul>
