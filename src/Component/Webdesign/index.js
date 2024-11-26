@@ -64,6 +64,26 @@ import slide18 from "../../assets/images/web/techtinder.png";
 import slide18Right from "../../assets/images/web/svg/slide18-right-bottom.png";
 import slide18Left from "../../assets/images/web/svg/slide18-left-bottom.png";
 
+import slide19 from "../../assets/images/web/ios-mockup.png";
+import slide19Left from "../../assets/images/web/svg/slide19-left-bottom.png";
+import slide19Right from "../../assets/images/web/svg/slide19-right-bottom.png";
+
+import slide20 from "../../assets/images/web/multitenancy.png";
+import slide20Left from "../../assets/images/web/svg/slide20-left-bottom.png";
+import slide20Right from "../../assets/images/web/svg/slide20-right-bottom.png";
+
+import slide21 from "../../assets/images/web/wellbeingNavigator.png";
+import slide21Left from "../../assets/images/web/svg/slide21-left-bottom.png";
+import slide21Right from "../../assets/images/web/svg/slide21-right-bottom.png";
+
+import slide22 from "../../assets/images/web/aicallfloor.png";
+import slide22Left from "../../assets/images/web/svg/slide22-left-bottom.png";
+import slide22Right from "../../assets/images/web/svg/slide22-right-bottom.png";
+
+import slide23 from "../../assets/images/web/dropshippingcrm.png";
+import slide23Left from "../../assets/images/web/svg/slide23-left-bottom.png";
+import slide23Right from "../../assets/images/web/svg/slide23-right-bottom.png";
+
 import ScrollTop from "../ScrollTop";
 import Heading from "../Heading";
 import Contentoverlay from "./contentoverlay";
@@ -81,6 +101,186 @@ function Webdesign() {
       <div className="container">
         <div className="row">
           <div className="col">
+            {/* Drop Shipping crm */}
+            <div className="screen-container">
+              <div className="web-slide slide21">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide23} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Contentoverlay site="dropshippingcrm" />
+                <JackInTheBox direction="left">
+                  <div className="slide-left-img">
+                    <img src={slide23Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide23Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link">
+                    <NavLink
+                      to={
+                        "https://www.figma.com/proto/6UTGTi18bLm5sd80LUh7vw/HOME?node-id=303-335&node-type=frame&t=hP3hYY4J7qUs3zRO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=303%3A335&show-proto-sidebar=1"
+                      }
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+            {/* AI Call Floor */}
+            <div className="screen-container">
+              <div className="web-slide slide21">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide22} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Contentoverlay site="AiCallFloor" />
+                <JackInTheBox direction="left">
+                  <div className="slide-left-img">
+                    <img src={slide22Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide22Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link">
+                    <NavLink
+                      to={
+                        "https://www.figma.com/proto/6UTGTi18bLm5sd80LUh7vw/HOME?node-id=303-335&node-type=frame&t=hP3hYY4J7qUs3zRO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=303%3A335&show-proto-sidebar=1"
+                      }
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+            {/* Wellbeing Navigator */}
+            <div className="screen-container">
+              <div className="web-slide slide21">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide21} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Contentoverlay site="WellbeingNavigator" />
+                <JackInTheBox direction="left">
+                  <div className="slide-left-img">
+                    <img src={slide21Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide21Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link">
+                    <NavLink
+                      to={
+                        "https://www.figma.com/proto/6UTGTi18bLm5sd80LUh7vw/HOME?node-id=303-335&node-type=frame&t=hP3hYY4J7qUs3zRO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=303%3A335&show-proto-sidebar=1"
+                      }
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+            {/* Multitenancy */}
+            <div className="screen-container">
+              <div className="web-slide slide20">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide20} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Contentoverlay site="B2BAutoparts" />
+                <JackInTheBox direction="left">
+                  <div className="slide-left-img">
+                    <img src={slide20Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide20Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link">
+                    <NavLink
+                      to={
+                        "https://www.figma.com/proto/od1zxx9C1deFfeIVGWncGz/Multitenancy?node-id=506-8190&node-type=frame&t=bdsb9G2H3UIuk5MD-1&scaling=min-zoom&content-scaling=fixed&page-id=179%3A1924&starting-point-node-id=506%3A8190"
+                      }
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
+            {/* IOS Mockup */}
+            <div className="screen-container">
+              <div className="web-slide slide19">
+                <Zoom>
+                  <div>
+                    <Fade>
+                      <img src={slide19} alt="" className="main-image" />
+                    </Fade>
+                  </div>
+                </Zoom>
+                <Contentoverlay site="iosmockup" />
+                <JackInTheBox direction="left">
+                  <div className="slide-left-img">
+                    <img src={slide19Left} alt="" />
+                  </div>
+                </JackInTheBox>
+                <Fade>
+                  <div className="slide-right-img">
+                    <img src={slide19Right} alt="" />
+                  </div>
+                </Fade>
+                <Bounce>
+                  <div className="link">
+                    <NavLink
+                      to={
+                        "https://www.figma.com/proto/47zhyEqf2eHFgQ0NHoOpDH/Design_file?node-id=214-2284&node-type=frame&t=OKctqAR4r6oZWDap-1&scaling=min-zoom&content-scaling=fixed&page-id=214%3A2004&starting-point-node-id=214%3A2284&show-proto-sidebar=1"
+                      }
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Prototype
+                    </NavLink>
+                  </div>
+                </Bounce>
+              </div>
+            </div>
             {/* arborfinancialgroup */}
             <div className="screen-container">
               <div className="web-slide slide1">

@@ -28,26 +28,30 @@ function Contentoverlay(props) {
                 })}
               </ul>
             </div>
-            <div className="ui-role">
-              <p className="mb-10">
-                <strong>UI Role</strong>
-              </p>
-              <ul>
-                {item?.uirole?.map((data, key) => {
-                  return <li key={key}>{data}</li>;
-                })}
-              </ul>
-            </div>
-            <div className="ui-engineer">
-              <p className="mb-10">
-                <strong>UI Engineer</strong>
-              </p>
-              <ul>
-                {item?.uiengineer?.map((data, key) => {
-                  return <li key={key}>{data}</li>;
-                })}
-              </ul>
-            </div>
+            {item?.uirole && (
+              <div className="ui-role">
+                <p className="mb-10">
+                  <strong>UI Role</strong>
+                </p>
+                <ul>
+                  {item?.uirole?.map((data, key) => {
+                    return <li key={key}>{data}</li>;
+                  })}
+                </ul>
+              </div>
+            )}
+            {item?.uiengineer && (
+              <div className="ui-engineer">
+                <p className="mb-10">
+                  <strong>UI Engineer</strong>
+                </p>
+                <ul>
+                  {item?.uiengineer?.map((data, key) => {
+                    return <li key={key}>{data}</li>;
+                  })}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </section>
