@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 // import { NavLink } from "react-router-dom";
 // import { isMobile } from "react-device-detect";
 // import Slider from "react-slick";

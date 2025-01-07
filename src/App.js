@@ -1,74 +1,74 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  NavLink,
+  // NavLink,
   Navigate,
-  useLocation,
+  // useLocation,
 } from "react-router-dom";
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/style.scss";
 import Home from "./Component/Home";
-import About from "./Component/About";
-import Appportfolio from "./Component/Appportfolio";
-import Webdesign from "./Component/Webdesign";
-import Casestudylist from "./Component/Casestudylist";
-import Casestudydetails from "./Component/Casestudydetails";
-import Resume from "./Component/Resume";
-import Contact from "./Component/Contact";
-import Logo from "./Component/Logo";
-import Banners from "./Component/Banners";
-import { JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
-import Sassdesign from "./Component/Sassdesign";
-import HomeLogo from "../src/assets/images/home.svg";
+// import About from "./Component/About";
+// import Appportfolio from "./Component/Appportfolio";
+// import Webdesign from "./Component/Webdesign";
+// import Casestudylist from "./Component/Casestudylist";
+// import Casestudydetails from "./Component/Casestudydetails";
+// import Resume from "./Component/Resume";
+// import Contact from "./Component/Contact";
+// import Logo from "./Component/Logo";
+// import Banners from "./Component/Banners";
+// import { JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
+//import Sassdesign from "./Component/Sassdesign";
+// import HomeLogo from "../src/assets/images/home.svg";
 
-function Menu({ onMenuChildComponentClick }) {
-  const location = useLocation();
+// function Menu({ onMenuChildComponentClick }) {
+//   const location = useLocation();
 
-  return (
-    <div>
-      {location.pathname !== "" && (
-        <div
-          className="menu-button"
-          role="button"
-          onClick={onMenuChildComponentClick}
-        >
-          <span className="menu-button-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-      )}
-    </div>
-  );
-}
-function MobileMenu({ onMenuChildComponentClick }) {
-  return (
-    <div>
-      <div
-        className="menu-button"
-        role="button"
-        onClick={onMenuChildComponentClick}
-      >
-        <span className="menu-button-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       {location.pathname !== "" && (
+//         <div
+//           className="menu-button"
+//           role="button"
+//           onClick={onMenuChildComponentClick}
+//         >
+//           <span className="menu-button-icon">
+//             <span></span>
+//             <span></span>
+//             <span></span>
+//           </span>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+// function MobileMenu({ onMenuChildComponentClick }) {
+//   return (
+//     <div>
+//       <div
+//         className="menu-button"
+//         role="button"
+//         onClick={onMenuChildComponentClick}
+//       >
+//         <span className="menu-button-icon">
+//           <span></span>
+//           <span></span>
+//           <span></span>
+//         </span>
+//       </div>
+//     </div>
+//   );
+// }
 
 function App() {
-  const [menu, setMenu] = useState(false);
-  const menuOnClick = () => {
-    setMenu((prev) => !prev);
-  };
+  // const [menu, setMenu] = useState(false);
+  // const menuOnClick = () => {
+  //   setMenu((prev) => !prev);
+  // };
 
   return (
     <Router>
@@ -327,7 +327,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/" element={<Home />} />
-          <Route path="/banners" element={<Banners />} />
+          {/* <Route path="/banners" element={<Banners />} />
           <Route path="/app-design" element={<Appportfolio />} />
           <Route path="/web-design" element={<Webdesign />} />
           <Route path="/sass-design" element={<Sassdesign />} />
@@ -339,7 +339,7 @@ function App() {
             path="/case-study-details/:id"
             element={<Casestudydetails />}
           />
-          <Route path="/logo" element={<Logo />} />
+          <Route path="/logo" element={<Logo />} /> */}
         </Routes>
       </main>
     </Router>
