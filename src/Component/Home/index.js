@@ -1,388 +1,326 @@
-import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import { isMobile } from "react-device-detect";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState, useEffect, useRef } from "react";
+// import { NavLink } from "react-router-dom";
+// import { isMobile } from "react-device-detect";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import { allprojects } from "../../data/allprojects";
+import Drawer from "./drawer";
 
 function Home() {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    cssEase: "linear",
-    arrows: false,
+  const [drawer, setDrawer] = useState(0);
+  const [project, setProject] = useState(0);
+  const [activeSection, setActiveSection] = useState("");
+
+  const openDrawerEvent = (item) => {
+    setProject(item);
+    setDrawer(true);
   };
+
+  const closeDrawer = () => {
+    setDrawer(false);
+  };
+
+  const section0Ref = useRef(null);
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    const sections = [
+      section0Ref.current,
+      section1Ref.current,
+      section2Ref.current,
+      section3Ref.current,
+    ];
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
-  const [percentageStyle1, setPercentageStyle1] = useState(0);
-  const [percentageStyle2, setPercentageStyle2] = useState(0);
-  const [percentageStyle3, setPercentageStyle3] = useState(0);
-  const [percentageStyle4, setPercentageStyle4] = useState(0);
-  const [percentageStyle5, setPercentageStyle5] = useState(0);
-  const [percentageStyle6, setPercentageStyle6] = useState(0);
-  const [percentageStyle7, setPercentageStyle7] = useState(0);
-  const [percentageStyle8, setPercentageStyle8] = useState(0);
-  const [percentageStyle9, setPercentageStyle9] = useState(0);
-  const [percentageStyle10, setPercentageStyle10] = useState(0);
-
-  const handleMouseMoveStyle1 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle1(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle1Reset = () => {
-    setPercentageStyle1(0);
-  };
-  const handleMouseMoveStyle2 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle2(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle2Reset = () => {
-    setPercentageStyle2(0);
-  };
-  const handleMouseMoveStyle3 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle3(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle3Reset = () => {
-    setPercentageStyle3(0);
-  };
-  const handleMouseMoveStyle4 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle4(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle4Reset = () => {
-    setPercentageStyle4(0);
-  };
-  const handleMouseMoveStyle5 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle5(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle5Reset = () => {
-    setPercentageStyle5(0);
-  };
-  const handleMouseMoveStyle6 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle6(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle6Reset = () => {
-    setPercentageStyle6(0);
-  };
-  const handleMouseMoveStyle7 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle7(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle7Reset = () => {
-    setPercentageStyle7(0);
-  };
-  const handleMouseMoveStyle8 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle8(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle8Reset = () => {
-    setPercentageStyle8(0);
-  };
-  const handleMouseMoveStyle9 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle9(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle9Reset = () => {
-    setPercentageStyle9(0);
-  };
-  const handleMouseMoveStyle10 = (e) => {
-    const divWidth = e.target.clientWidth;
-    const mouseX = e.nativeEvent.offsetX;
-    const mousePercentage = (mouseX / divWidth) * 100;
-    setPercentageStyle10(mousePercentage.toFixed(2));
-  };
-  const handleMouseMoveStyle10Reset = () => {
-    setPercentageStyle10(0);
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
-      {isMobile ? (
-        <div>
-          <div className="home-container">
-            <div className="widmill-animation">
-              <div className="windmill-blades"></div>
-            </div>
-            <div className="navigation-section">
-              <div className="animation">
-                <ul>
+      <header className="header">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <section className="header-inner">
+                <div className="brand">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/portrait.png`}
+                    alt=""
+                  />
+                </div>
+                <div className="name">
+                  <h2>Subrata Dhal</h2>
+                </div>
+                <ul className="nav">
                   <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/case-study"}>Case Study</NavLink>
-                    </span>
+                    <button
+                      onClick={() => scrollToSection(section0Ref)}
+                      className={activeSection === "section0" ? "active" : ""}
+                    >
+                      SAAS
+                    </button>
+                  </li>
+                  {/* <li>
+                    <button
+                      onClick={() => scrollToSection(section1Ref)}
+                      className={activeSection === "section1" ? "active" : ""}
+                    >
+                      Section 1
+                    </button>
+                  </li> */}
+                  <li>
+                    <button
+                      onClick={() => scrollToSection(section2Ref)}
+                      className={activeSection === "section2" ? "active" : ""}
+                    >
+                      App
+                    </button>
                   </li>
                   <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/app-design"}>App Design</NavLink>
-                    </span>
-                  </li>
-                  <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/web-design"}>Web Design</NavLink>
-                    </span>
-                  </li>
-                  <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/sass-design"}>SASS Design</NavLink>
-                    </span>
-                  </li>
-                  <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/logo"}>Logo Design</NavLink>
-                    </span>
-                  </li>
-                  <li>
-                    <span className="line"></span>
-                    <span className="circle">
-                      <NavLink to={"/creatives"}>Graphics Design</NavLink>
-                    </span>
+                    <button
+                      onClick={() => scrollToSection(section3Ref)}
+                      className={activeSection === "section3" ? "active" : ""}
+                    >
+                      Web
+                    </button>
                   </li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
-      ) : (
-        <div className="home-container">
-          <div className="widmill-animation">
-            <div className="windmill-blades"></div>
-          </div>
-          <div className="crative">
-            <Slider {...settings}>
-              <div>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/00-Research.svg`}
-                  alt=""
-                />
-                <h2>Research</h2>
+      </header>
+      <div className="main">
+        <section id="section0" ref={section0Ref} className="section"></section>
+        <section id="section1" ref={section1Ref} className="section">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h2 className="section-header">SaaS (UX/UI)</h2>
               </div>
-              <div>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/01-User_Persona.svg`}
-                  alt=""
-                />
-                <h2>User Persona</h2>
+            </div>
+            <div className="row">
+              <div className="col">
+                {allprojects.map((item, index1) => {
+                  return (
+                    <>
+                      {item?.type === "saas" && (
+                        <div className="project-card" key={index1}>
+                          <div className="project-card-image">
+                            <img
+                              src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.img}`}
+                              alt=""
+                            />
+                          </div>
+                          <div className="project-card-content">
+                            <h3>{item?.title}</h3>
+                            <p>{item?.description}</p>
+                            <ul className="links">
+                              <li>
+                                <button
+                                  className="details-button"
+                                  onClick={() => {
+                                    openDrawerEvent(item?.id);
+                                  }}
+                                >
+                                  Details
+                                </button>
+                              </li>
+                              {item?.links?.map((link, index) => {
+                                return (
+                                  <li key={index}>
+                                    <a
+                                      href={link?.link}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      {link?.title}
+                                    </a>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  );
+                })}
               </div>
-              <div>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/02-Information_Architecture.svg`}
-                  alt=""
-                />
-                <h2>Information Architecture</h2>
-              </div>
-              <div>
-                <h2>Wireframing and Prototyping</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/03-Wireframing_and_Prototyping.svg`}
-                  alt=""
-                />
-              </div>
-              <div>
-                <h2>Usability Testing</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/04-Usability_Testing.svg`}
-                  alt=""
-                />
-              </div>
-              <div>
-                <h2>Iteration and Refinement</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/05-Iteration_and_Refinement.svg`}
-                  alt=""
-                />
-              </div>
-              <div>
-                <h2>Visual Design</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/06-Visual_Design.svg`}
-                  alt=""
-                />
-              </div>
-              <div>
-                <h2>Collaboration</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/07-Collaboration.svg`}
-                  alt=""
-                />
-              </div>
-              <div>
-                <h2>Launch and Evaluation</h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/home-slider/08-Launch_and_Evaluation.svg`}
-                  alt=""
-                />
-              </div>
-            </Slider>
-          </div>
-          <div className="navigation-section">
-            <ul>
-              <li className="link-style-1">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle1}
-                  onMouseLeave={handleMouseMoveStyle1Reset}
-                  style={{ backgroundSize: `${percentageStyle1}%` }}
-                  to={"/resume"}
-                >
-                  Resume
-                </NavLink>
-              </li>
-              <li className="link-style-2">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle2}
-                  onMouseLeave={handleMouseMoveStyle2Reset}
-                  style={{ backgroundSize: `${percentageStyle2}%` }}
-                  to={"/banners"}
-                >
-                  Banners
-                </NavLink>
-              </li>
-              <li className="link-style-3">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle3}
-                  onMouseLeave={handleMouseMoveStyle3Reset}
-                  style={{ backgroundSize: `${percentageStyle3}%` }}
-                  to={"/web-design"}
-                >
-                  Web Design
-                </NavLink>
-              </li>
-              <li className="link-style-4">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle4}
-                  onMouseLeave={handleMouseMoveStyle4Reset}
-                  style={{ backgroundSize: `${percentageStyle4}%` }}
-                  to={"/case-study"}
-                >
-                  Case Study
-                </NavLink>
-              </li>
-              <li className="link-style-5">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle5}
-                  onMouseLeave={handleMouseMoveStyle5Reset}
-                  style={{ backgroundSize: `${percentageStyle5}%` }}
-                  to={"/app-design"}
-                >
-                  App Design
-                </NavLink>
-              </li>
-              <li className="link-style-7">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle7}
-                  onMouseLeave={handleMouseMoveStyle7Reset}
-                  style={{ backgroundSize: `${percentageStyle7}%` }}
-                  to={""}
-                >
-                  Illustration
-                </NavLink>
-              </li>
-              <li className="link-style-9">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle9}
-                  onMouseLeave={handleMouseMoveStyle9Reset}
-                  style={{ backgroundSize: `${percentageStyle9}%` }}
-                  to={""}
-                >
-                  Creatives
-                </NavLink>
-              </li>
-              <li className="link-style-8">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle8}
-                  onMouseLeave={handleMouseMoveStyle8Reset}
-                  style={{ backgroundSize: `${percentageStyle8}%` }}
-                  to={"/logo"}
-                >
-                  Logo
-                </NavLink>
-              </li>
-              <li className="link-style-10">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle10}
-                  onMouseLeave={handleMouseMoveStyle10Reset}
-                  style={{ backgroundSize: `${percentageStyle10}%` }}
-                  to={"/about"}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li className="link-style-6">
-                <NavLink
-                  onMouseMove={handleMouseMoveStyle6}
-                  onMouseLeave={handleMouseMoveStyle6Reset}
-                  style={{ backgroundSize: `${percentageStyle6}%` }}
-                  to={"/contact"}
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-            <div className="animation">
-              <ul>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-                <li>
-                  <span className="line"></span>
-                  <span className="circle"></span>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-      )}
+        </section>
+        <section id="section2" ref={section2Ref} className="section">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h2 className="section-header">App (UX/UI)</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                {allprojects.map((item, index) => {
+                  return (
+                    <>
+                      {item?.type === "app" && (
+                        <div
+                          key={index}
+                          className={
+                            index % 2 === 0 ? "app-card" : "app-card odd-class"
+                          }
+                        >
+                          <div className="app-card-header">
+                            {item?.logo && (
+                              <div className="app-card-header-logo">
+                                <img
+                                  src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.logo}`}
+                                  alt=""
+                                />
+                              </div>
+                            )}
+                            {item?.title && (
+                              <div className="app-card-header-title">
+                                <h3>{item?.title}</h3>
+                              </div>
+                            )}
+                          </div>
+                          <div className="app-card-body">
+                            <div className="app-card-content">
+                              <p>{item?.description}</p>
+                            </div>
+                          </div>
+                          <div className="app-card-footer">
+                            <ul className="links">
+                              {item?.id !== 0 && (
+                                <li>
+                                  <button
+                                    className="details-button"
+                                    onClick={() => {
+                                      openDrawerEvent(item?.id);
+                                    }}
+                                  >
+                                    Details
+                                  </button>
+                                </li>
+                              )}
+                              {item?.links?.map((link, index1) => {
+                                return (
+                                  <li key={index1}>
+                                    <a
+                                      href={link?.link}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      {link?.title}
+                                    </a>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.thumb}`}
+                            alt=""
+                            className="thumb"
+                          />
+                        </div>
+                      )}
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section3" ref={section3Ref} className="section">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h2 className="section-header">Web (UX/UI)</h2>
+              </div>
+            </div>
+            <div className="row">
+              {allprojects.map((item, index1) => {
+                return (
+                  <>
+                    {item?.type === "web" && (
+                      <div className="col-6" key={index1}>
+                        <div className="web-card">
+                          <div className="web-card-image">
+                            <img
+                              src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.img}`}
+                              alt=""
+                            />
+                          </div>
+                          <div className="web-card-content">
+                            <h3>{item?.title}</h3>
+                            <p>{item?.description}</p>
+                            <ul className="links">
+                              {/* <li>
+                                <button
+                                  className="details-button"
+                                  onClick={() => {
+                                    openDrawerEvent(item?.id);
+                                  }}
+                                >
+                                  Details
+                                </button>
+                              </li> */}
+                              {item?.links?.map((link, index) => {
+                                return (
+                                  <li key={index}>
+                                    <a
+                                      href={link?.link}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      {link?.title}
+                                    </a>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      </div>
+      <Drawer open={drawer} dataKey={project} closeDrawer={closeDrawer} />
     </>
   );
 }

@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect,  } from "react";
+// import { useParams } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import ReactPlayer from "react-player";
 import { stockData } from "../../data/casestudy";
-import PaginationCaseStudy from "../PaginationCaseStudy";
+// import PaginationCaseStudy from "../PaginationCaseStudy";
 import ScrollTop from "../ScrollTop";
 import Beenow from "../../assets/images/video/beenow.mp4";
 
 function Casestudydetails(props) {
   const [item, setIitem] = useState({});
-  const { id } = useParams();
 
   useEffect(() => {
-    const arrayItem = stockData.find((item) => item.slug === id);
+    const arrayItem = stockData.find((item) => item.id === props.id);
     setIitem(arrayItem);
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [props]);
 
   return (
-    <div className="case-study-details">
+    <div className="case-study-details" >
       <section className="header-panel">
         <div className="container">
           <div className="row">
@@ -35,20 +34,22 @@ function Casestudydetails(props) {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="hero-banner-case-study">
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.bannerImage}`}
-                  alt=""
-                />
+      {item?.bannerImage && (
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="hero-banner-case-study">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/casestudy/${item?.bannerImage}`}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
       <section>
         <div className="container">
           <div className="row">
@@ -333,39 +334,40 @@ function Casestudydetails(props) {
           </div>
         </section>
       )}
-      <section>
-        <div
-          className="container-fluid screens-section"
-          style={{ background: item?.color?.screensBackground }}
-        >
-          <div className="row">
-            <div className="col">
-              <div className="section-cs text-center">
-                <h2 style={{ color: item?.color?.primary }}>Screens</h2>
-              </div>
-              <div
-                className="container"
-                style={{ background: item?.color?.screensBackground }}
-              >
-                <div className="row">
-                  <div className="col all-screens">
-                    {item?.appImg?.map((data, key) => {
-                      return (
-                        <img
-                          key={key}
-                          src={`${process.env.PUBLIC_URL}/images/casestudy/${data}`}
-                          alt=""
-                        />
-                      );
-                    })}
+      {item?.appImg && (
+        <section>
+          <div
+            className="container-fluid screens-section"
+            style={{ background: item?.color?.screensBackground }}
+          >
+            <div className="row">
+              <div className="col">
+                <div className="section-cs text-center">
+                  <h2 style={{ color: item?.color?.primary }}>Screens</h2>
+                </div>
+                <div
+                  className="container"
+                  style={{ background: item?.color?.screensBackground }}
+                >
+                  <div className="row">
+                    <div className={`${"col all-screens " + item?.screentype}`}>
+                      {item?.appImg?.map((data, key) => {
+                        return (
+                          <img
+                            key={key}
+                            src={`${process.env.PUBLIC_URL}/images/casestudy/${data}`}
+                            alt=""
+                          />
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <PaginationCaseStudy slug={id} />
+        </section>
+      )}
       <ScrollTop />
     </div>
   );

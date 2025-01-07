@@ -72,7 +72,7 @@ function App() {
 
   return (
     <Router>
-      {isMobile ? (
+      {/* {isMobile ? (
         <div className={menu ? "mobile-header open" : "mobile-header"}>
           <div className="mobile-inner-header">
             <MobileMenu onMenuChildComponentClick={menuOnClick} />
@@ -322,7 +322,7 @@ function App() {
           </ul>
           <Menu onMenuChildComponentClick={menuOnClick} />
         </header>
-      )}
+      )} */}
       <main>
         <Routes>
           <Route path="*" element={<Navigate to="/" />} />
