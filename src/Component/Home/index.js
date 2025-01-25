@@ -1,16 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-// import { NavLink } from "react-router-dom";
-// import { isMobile } from "react-device-detect";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import React, { useState, useRef } from "react";
 import { allprojects } from "../../data/allprojects";
 import Drawer from "./drawer";
 
 function Home() {
   const [drawer, setDrawer] = useState(0);
   const [project, setProject] = useState(0);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("section0");
 
   const openDrawerEvent = (item) => {
     setProject(item);
@@ -24,44 +19,10 @@ function Home() {
   const section0Ref = useRef(null);
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
-  const section3Ref = useRef(null);
-
-  useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    const sections = [
-      section0Ref.current,
-      section1Ref.current,
-      section2Ref.current,
-      section3Ref.current,
-    ];
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(ref.current.id);
   };
 
   return (
@@ -89,26 +50,18 @@ function Home() {
                       SAAS
                     </button>
                   </li>
-                  {/* <li>
+                  <li>
                     <button
                       onClick={() => scrollToSection(section1Ref)}
                       className={activeSection === "section1" ? "active" : ""}
-                    >
-                      Section 1
-                    </button>
-                  </li> */}
-                  <li>
-                    <button
-                      onClick={() => scrollToSection(section2Ref)}
-                      className={activeSection === "section2" ? "active" : ""}
                     >
                       App
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={() => scrollToSection(section3Ref)}
-                      className={activeSection === "section3" ? "active" : ""}
+                      onClick={() => scrollToSection(section2Ref)}
+                      className={activeSection === "section2" ? "active" : ""}
                     >
                       Web
                     </button>
@@ -120,8 +73,8 @@ function Home() {
         </div>
       </header>
       <div className="main">
-        <section id="section0" ref={section0Ref} className="section"></section>
-        <section id="section1" ref={section1Ref} className="section">
+        {/* <section id="section0" ref={section0Ref} className="section"></section> */}
+        <section id="section0" ref={section0Ref} className="section">
           <div className="container">
             <div className="row">
               <div className="col">
@@ -144,6 +97,18 @@ function Home() {
                           <div className="project-card-content">
                             <h3>{item?.title}</h3>
                             <p>{item?.description}</p>
+                            <ul className="technology-logos">
+                              {item?.techLogos?.map((data, key) => {
+                                return (
+                                  <li key={key}>
+                                    <img
+                                      src={`${process.env.PUBLIC_URL}/images/casestudy/svg/${data}`}
+                                      alt={data}
+                                    />
+                                  </li>
+                                );
+                              })}
+                            </ul>
                             <ul className="links">
                               <li>
                                 <button
@@ -179,7 +144,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section id="section2" ref={section2Ref} className="section">
+        <section id="section1" ref={section1Ref} className="section">
           <div className="container">
             <div className="row">
               <div className="col">
@@ -261,7 +226,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section id="section3" ref={section3Ref} className="section">
+        <section id="section2" ref={section2Ref} className="section">
           <div className="container">
             <div className="row">
               <div className="col">
@@ -273,7 +238,7 @@ function Home() {
                 return (
                   <>
                     {item?.type === "web" && (
-                      <div className="col-6" key={index1}>
+                      <div className="col-6 col-mob-1" key={index1}>
                         <div className="web-card">
                           <div className="web-card-image">
                             <img

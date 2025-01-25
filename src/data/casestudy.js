@@ -81,7 +81,7 @@ export const stockData = [
       "I addressed the intended audience with age range was 22 to 55.",
     UserFlow:
       "The user flow begins with onboarding and store creation, followed by adding products and setting up payment gateways. Users can then manage inventory, track orders, and analyze sales performance through a responsive dashboard. This seamless process was designed to reduce friction and improve task efficiency.",
-    UserFlowImage: "quickeats/userflow.webp",
+    UserFlowImage: "b2bautoparts/userflow.webp",
     slug: "quickeats",
     nextlink: "beenow",
     prevlink: "quickeats",

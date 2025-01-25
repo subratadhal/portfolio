@@ -4047,6 +4047,9 @@ Pagination Common
     background: #fff;
    // border: 1px solid #ccc;
     margin-bottom: 100px;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
     .project-card-image{
         width: 400px;
         min-width: 400px;
@@ -4058,6 +4061,10 @@ Pagination Common
             height: 100%;      
             border-radius: 20px 0 0 20px;      
         }
+        @media screen and (max-width: 992px) {
+            border-radius: 20px;
+            margin: 20px auto;
+        }
     }
     .project-card-content{
         display: flex;
@@ -4066,19 +4073,28 @@ Pagination Common
         h3{
             font-size: 24px;
             font-weight: 800;
+            @media screen and (max-width: 992px) {
+                text-align: center;
+            }
         }
         p{
-            font-size: 18px;
+           font-size: 18px;
            font-family: "Quicksand", serif;
            font-optical-sizing: auto;
            font-weight:400;
            font-style: normal;
+           @media screen and (max-width: 992px) {
+                text-align: center;
+            }
         }
         .links{
             display: flex;
             flex-direction: row;
             margin: 0;
             padding: 0;
+            @media screen and (max-width: 992px) {
+                justify-content: center;
+            }
             li{
                 display: block;
                 margin-right: 20px;
@@ -4096,6 +4112,26 @@ Pagination Common
                         background: #0066FF;
                         color: #fff;
                     }
+                }
+            }
+        }
+        .technology-logos{
+            display: flex;
+            flex-direction: row;
+            margin: 15px 0 30px;
+            padding: 0;
+            @media screen and (max-width: 992px) {
+                justify-content: center;
+            }
+            li{
+                display: block;
+                margin-right: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 20px;
+                    margin: 0 5px;
                 }
             }
         }
@@ -4190,11 +4226,17 @@ Pagination Common
     background: #fff;
     //border: 1px solid #ccc;
     margin-bottom: 100px;
+    @media screen and (max-width: 1200px) {
+        height: auto;
+    }
     .web-card-image{
         width: 100%;
         height: 300px;
         border-radius: 20px 20px 0 0;     
         overflow: hidden;
+        @media screen and (max-width: 1200px) {
+            height: auto;
+        }
         img{
             width: 100%;   
             border-radius: 20px 20px 0 0;      
@@ -4207,6 +4249,9 @@ Pagination Common
         h3{
             font-size: 24px;
             font-weight: 800;
+             @media screen and (max-width: 992px) {
+                font-size: 18px;
+             }
         }
         p{
             font-size: 18px;
@@ -4256,8 +4301,13 @@ Pagination Common
             }
         }
     }
+    
 }
-
+@media screen and (max-width: 600px) {
+    .col-mob-1{
+        width: 100% !important;
+    }
+}
 
 .app-card{
     width: 100%;
@@ -4269,11 +4319,24 @@ Pagination Common
     //border: 1px solid #fff;
     justify-content: center;
     position: relative;
+    @media screen and (max-width:768px) {
+        margin-bottom: 50px;
+    }
     .thumb{
         position: absolute;
         right: 0;
         top: 0;   
         max-height: 500px;
+        @media screen and (max-width: 992px) {
+            max-height: 350px;
+            top:70px;
+            right: -50px;
+        }
+        @media screen and (max-width:768px) {
+            max-height: 150px;
+            top: 50px;
+            right:0px;
+        }
     }
 
     .app-card-header{
@@ -4311,10 +4374,20 @@ Pagination Common
         padding: 30px;
         height: 150px;
         display: flex;
+        @media screen and (max-width:768px) {
+            height: auto;
+            padding-top: 40px;
+        }
         .app-card-content{
             padding-right: 50%;
             display: flex;
             align-items: center;
+            @media screen and (max-width: 992px) {
+                padding-right: 45%;
+            }
+            @media screen and (max-width:768px) {
+                padding: 0;
+            }
              p{
                 font-size: 18px;
                 font-family: "Quicksand", serif;
@@ -4322,6 +4395,9 @@ Pagination Common
                 font-weight:400;
                 font-style: normal;
                 margin-bottom: 0;
+                @media screen and (max-width: 992px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -4373,6 +4449,16 @@ Pagination Common
             left: 0;
             top: 0;   
             max-height: 500px;
+            @media screen and (max-width: 992px) {
+                max-height: 350px;
+                top:70px;
+                left: -50px;
+            }
+            @media screen and (max-width:768px) {
+                max-height: 150px;
+                top: 50px;
+                left: 0px;
+            }
         }
         .app-card-header{
             flex-direction: row-reverse;
@@ -4385,6 +4471,14 @@ Pagination Common
             .app-card-content{
                 padding-right: 0%;
                 padding-left: 50%;
+                @media screen and (max-width:768px) {
+                    padding: 0;
+                }
+                p{
+                    @media screen and (max-width: 992px) {
+                        font-size: 16px;
+                    }
+                }
             }
         }
          .app-card-footer{

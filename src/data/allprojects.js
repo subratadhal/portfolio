@@ -16,6 +16,13 @@ export const allprojects = [
         link: "https://www.figma.com/proto/od1zxx9C1deFfeIVGWncGz/Multitenancy?node-id=506-8190&t=nqYVaLyuCkNvu1Sb-1&scaling=min-zoom&content-scaling=fixed&page-id=179%3A1924&starting-point-node-id=506%3A8190",
       },
     ],
+    techLogos: [
+      "Figma.svg",
+      "Adobe-Photoshop.svg",
+      "React.svg",
+      "HTML5.svg",
+      "CSS3.svg",
+    ],
   },
   {
     id: "203",
@@ -30,6 +37,13 @@ export const allprojects = [
         title: "Live",
         link: "https://www.eshopbox.com/",
       },
+    ],
+    techLogos: [
+      "Figma.svg",
+      "Adobe-Photoshop.svg",
+      "Angular.svg",
+      "HTML5.svg",
+      "CSS3.svg",
     ],
   },
   {
@@ -46,6 +60,7 @@ export const allprojects = [
         link: "https://www.figma.com/proto/Bp1IZTZmB3ErD234rh5A4B/ACK-and-TakeOff?node-id=0-1086&p=f&t=ztJEAIDr3xd9VTIu-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A1086",
       },
     ],
+    techLogos: ["Figma.svg", "Adobe-Photoshop.svg", "Adobe-Illustrator.svg"],
   },
   {
     id: "2021",
@@ -61,6 +76,7 @@ export const allprojects = [
         link: "https://www.figma.com/proto/Bp1IZTZmB3ErD234rh5A4B/ACK-and-TakeOff?node-id=41-41972&p=f&t=vcS2zuDmapAG3sZB-1&scaling=min-zoom&content-scaling=fixed&page-id=41%3A41042&starting-point-node-id=41%3A41972&show-proto-sidebar=1",
       },
     ],
+    techLogos: ["Figma.svg", "Adobe-Photoshop.svg", "Adobe-Illustrator.svg"],
   },
 
   {
@@ -70,12 +86,23 @@ export const allprojects = [
     title: "Hajoona",
     img: "/hajoona/list-banner.webp",
     description:
-      "Streamlined Hajoona’s registration process with intuitive design, reducing time from 1.5 months to days, and provided a responsive platform for efficient network management across devices.",
+      "Streamlined Hajoona's registration process with intuitive design, reducing time from 1.5 months to days, and provided a responsive platform for efficient network management across devices.",
     links: [
+      {
+        title: "Screens",
+        link: "https://www.behance.net/gallery/105726331/Hajoon-Shop-Registration-Process",
+      },
       {
         title: "Live",
         link: "https://hajoona.com/",
       },
+    ],
+    techLogos: [
+      "Adobe-XD.svg",
+      "Adobe-Photoshop.svg",
+      "Adobe-Illustrator.svg",
+      "HTML5.svg",
+      "CSS3.svg",
     ],
   },
   {
@@ -88,9 +115,21 @@ export const allprojects = [
       "Designed intuitive, user-centric ERP interfaces for DiSellCo, streamlining complex workflows, reducing user errors, and enhancing operational efficiency with responsive design across desktop, tablet, and mobile devices.",
     links: [
       {
+        title: "Screens",
+        link: "https://www.behance.net/gallery/107966389/DiSellCo-App-Customer-service-portal?tracking_source=project_owner_other_projects",
+      },
+      {
         title: "Live",
         link: "https://foreverliving.com/",
       },
+    ],
+    techLogos: [
+      "Adobe-XD.svg",
+      "Adobe-Photoshop.svg",
+      "Adobe-Illustrator.svg",
+      "jQuery.svg",
+      "HTML5.svg",
+      "CSS3.svg",
     ],
   },
   // {
@@ -115,12 +154,20 @@ export const allprojects = [
     img: "/clearsell/list-banner.webp",
     description:
       "As a UX/UI designer for ClearSell, I created intuitive, responsive interfaces, simplifying B2B eCommerce transactions with seamless navigation and efficient workflows across desktop, tablet, and mobile devices.",
-    // links: [
-    //   {
-    //     title: "Prototype",
-    //     link: "http://www.google.com",
-    //   },
-    // ],
+    links: [
+      {
+        title: "Screens",
+        link: "https://www.behance.net/gallery/66641307/ClearSells",
+      },
+    ],
+    techLogos: [
+      "Adobe-Photoshop.svg",
+      "Adobe-Illustrator.svg",
+      "PHP.svg",
+      "jQuery.svg",
+      "HTML5.svg",
+      "CSS3.svg",
+    ],
   },
   //---------------------------------------------------------------------------------------------
   // WEB STORE
@@ -131,7 +178,7 @@ export const allprojects = [
     key: "wellbeingnavigator",
     title: "Well Being Navigator",
     img: "/wellbeingnavigator/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -145,7 +192,7 @@ export const allprojects = [
     key: "voagents",
     title: "VoAgents",
     img: "/voagents/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -159,7 +206,7 @@ export const allprojects = [
     key: "arborfinancialgroup",
     title: "Arbor Financial Group",
     img: "/arborfinancialgroup/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -173,7 +220,7 @@ export const allprojects = [
     key: "foreverliving",
     title: "Forever Living",
     img: "/foreverliving/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -187,7 +234,7 @@ export const allprojects = [
     key: "theautopartsshop",
     title: "The Auto Parts Shop",
     img: "/theautopartsshop/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -201,7 +248,7 @@ export const allprojects = [
     key: "speedtrader",
     title: "Speed Trader",
     img: "/speedtrader/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -215,7 +262,7 @@ export const allprojects = [
     key: "morethanjustparks",
     title: "More Than Just Parks",
     img: "/morethanjustparks/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -229,7 +276,7 @@ export const allprojects = [
     key: "stayxtrahotel",
     title: "Stay Xtra Hotel",
     img: "/stayxtrahotel/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -243,7 +290,7 @@ export const allprojects = [
     key: "infoskysolutions",
     title: "Info Sky Solutions",
     img: "/infoskysolutions/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -257,7 +304,7 @@ export const allprojects = [
     key: "techtinder",
     title: "Tech Tinder",
     img: "/techtinder/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -271,7 +318,7 @@ export const allprojects = [
     key: "oralarchitectlab",
     title: "Oral Architect Lab",
     img: "/oralarchitectlab/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -285,7 +332,7 @@ export const allprojects = [
     key: "relianceprimary",
     title: "Reliance Primary",
     img: "/relianceprimary/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -299,7 +346,7 @@ export const allprojects = [
     key: "icd10charts",
     title: "ICD10 Charts",
     img: "/icd10charts/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -313,7 +360,7 @@ export const allprojects = [
     key: "chalotirth",
     title: "Chalo Tirth",
     img: "/chalotirth/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -327,7 +374,7 @@ export const allprojects = [
     key: "edrugsafety",
     title: "eDrug Safety",
     img: "/edrugsafety/list-banner.webp",
-    description: "incomplete",
+    description: "",
     links: [
       {
         title: "Live Link",
@@ -380,8 +427,7 @@ export const allprojects = [
     id: "100",
     type: "app",
     key: "vrapp",
-    title: "Popup Shop Platform",
-    logo: "/vrapp/logo.webp",
+    title: "Popup Shop",
     thumb: "/vrapp/list-banner.webp",
     description:
       "Develop a user-friendly Popup Shop Platform for MAC Tablet, integrating AR/VR for an immersive shopping experience.",
